@@ -1,5 +1,6 @@
 'use strict';
 const { devNull } = require("os");
+const { hrtime } = require("process");
 const { pathToFileURL } = require("url");
 
 const bavaria = pathToFileURL("../assets/bavaria.png")
@@ -18,6 +19,7 @@ const swedish = pathToFileURL("../assets/swedish.png")
 const transylvania = pathToFileURL("../assets/transylvania.png")
 const stralsund = pathToFileURL("../assets/stralsund.png")
 const scots = pathToFileURL("../assets/scots.png")
+const france = pathToFileURL("../assets/france.png")
 
 module.exports = {
   async up (queryInterface, Sequelize) {
@@ -210,7 +212,7 @@ module.exports = {
       },
       {
         // START OF BATTLE OBJECT
-        prelude: "Gustavus Adolphus's victories at Breitenfeld in 1631, and Rain in 1632, drew him deep into Southern Germany where his attack on the imperial camp putside the city of Furth was bloodily repulsed by Albrecht von Wallenstein. The swedes later made contact with Wallenstein's troops at Halle, then at a stream 5-6 kilometres south of the city of Lutzen. Wallenstein requested reinforcements while the swedes camped 2 kilometres outside the town. Imperial troops worked through the night building defensive positions.",
+        prelude: "Gustavus Adolphus's victories at Breitenfeld in 1631, and Rain in 1632, drew him deep into Southern Germany where an attack on the imperial camp outside the city of Furth was bloodily repulsed by Albrecht von Wallenstein. The swedes later made contact with Wallenstein's troops at Halle, then at a stream 5-6 kilometres south of the city of Lutzen. Wallenstein requested reinforcements while the swedes camped 2 kilometres outside the town. Imperial troops worked through the night building defensive positions.",
         name: "Lutzen",
         description: "The first part of the battle featured a series of frontal attacks by the Swedes, which nearly succeeded before it was repulsed by a cavalry charge led by Pappenheim. While trying to reform his shattered infantry, Gustavus was killed in a skirmish with Imperial troops, but his subordinates rallied their men and supported by close range artillery fire overran the Imperial centre just before nightfall. Wallenstein withdrew in good order but had to abandon his wounded, many of his guns and most of his supply train. Despite the loss of their king, the Swedes continued the war under the direction of Axel Oxenstierna and, together with their German allies, formed the Heilbronn League in April 1633. ",
         imageUrl: "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a0/Death_of_King_Gustav_II_Adolf_of_Sweden_at_the_Battle_of_L%C3%BCtzen_%28Carl_Wahlbom%29_-_Nationalmuseum_-_18031.tif/lossy-page1-1280px-Death_of_King_Gustav_II_Adolf_of_Sweden_at_the_Battle_of_L%C3%BCtzen_%28Carl_Wahlbom%29_-_Nationalmuseum_-_18031.tif.jpg",
@@ -220,32 +222,32 @@ module.exports = {
         latitude: "51.25",
         longitude: "12.133333",
         army_one: JSON.stringify({
-          beligerents:[["",],["",],["", ]],
-          commanders: [["",],["",],["", ]],
-          strength: {},
-          casualties: ""
+          beligerents:[["Holy Roman Empire",hre],["Catholic League",catholic]],
+          commanders: [["Albrecht von Wallenstein",hre],["Graf von Pappenheim",hre],["Heinrich Holk",hre ]],
+          strength: {number: 19175, guns: 43},
+          casualties: "5,160 killed, wounded or Captured.\n 24 guns & 20 ammunition wagons captured"
         }),
         army_two: JSON.stringify({
-          beligerents:[["",],["",]],
-          commanders: [["P", ],["", ]],
-          strength: {},
+          beligerents:[["Sweden",swedish],["Saxony",saxony],["Hesse-Kassel",hesseKassel]],
+          commanders: [["Gustavus Adolphus",swedish ],["Bernard of Saxe-Weimar",swedish ],["Dodo van Knyphausen", swedish]],
+          strength: {number: 18738, guns: 60},
           casualties: ""
         }),
         questions: JSON.stringify({
           question1: {
-            text: "",
+            text: "Did Gustavus Adolphus survive the battle",
             answerOptions:[
-              {answerText: "", isCorrect:false},
-              {answerText: "", isCorrect:true},
-              {answerText: "", isCorrect:false},
+              {answerText: "No", isCorrect:true},
+              {answerText: "Yes", isCorrect:false},
+              {answerText: "Unknown", isCorrect:false},
             ]
           },
           question2: {
-            text: "?",
+            text: "The swedes and their german allies formed which league after the battle?",
             answerOptions:[
-              {answerText: "", isCorrect:false},
-              {answerText: "", isCorrect:true},
-              {answerText: "", isCorrect:false},
+              {answerText: "Dusseldorf league", isCorrect:false},
+              {answerText: "Christian league", isCorrect:false},
+              {answerText: "Heilbronn league", isCorrect:true},
             ]
           },
          
@@ -256,42 +258,42 @@ module.exports = {
       },
       {
         // START OF BATTLE OBJECT
-        prelude: "",
+        prelude: "A string of protestant defeats led France to intervene and declare war on the Habsburgs (Holy Roman Empire) and spanish empire on 19th May 1635, to limit Habsburg power. This was despite France being a Catholic power which suppressed its own Protestant rebellions. An initial invasion of the spanish netherlands ended in failure, witht the french retreating to their borders. A french defeat at the Battle of Honnecourt in 1642 opened the way to paris, spanish troops under Francisco de melo laid siege to the fortified town of Rocroi. 21 year old Louis de Bourbon, Prince of Condé, was appointed to stop him",
         name: "Rocroi",
-        description: "",
-        imageUrl: "",
+        description: "The battle began with a French cavalry attack which pushed back and scattered the opposing Spanish cavalry. An unauthorised french cavalry atack on the spanish was repulsed, with the spanish mounting a counteer attack which was later stopped by the french. Louis Conde's cavalry encircled the spanish and crashed through their rear, scattering the Spanish cavalry and artillery crews. The trapped and encircled spanish infantry held their ground and were pummeled with french artillery and captured spanish guns. Impressed with the bravery of the spanish troops, Conde offered the option of surrender which the spanish accepted. However upon riding towards them to accept their surrender, confused spanish troops opened fire on the prince, who was able to retreat. French forces responded with a devastating attack in whch the Spanish army was virtually destroyed.",
+        imageUrl: "https://upload.wikimedia.org/wikipedia/commons/9/9f/Rocroi.jpg",
         result: "",
         year: "1643",
-        date: "",
+        date: "19 May 1643",
         latitude: "49.919444",
         longitude: "4.527778",
         army_one: JSON.stringify({
-          beligerents:[["",],["",],["", ]],
-          commanders: [["",],["",],["", ]],
-          strength: {},
-          casualties: ""
+          beligerents:[["Spanish Empire",spanish]],
+          commanders: [["Francisco de Melo",spanish],["Duque de Alburquerque",spanish],["Conde Fontana", spanish ],["Graf von Isenburg",spanish]],
+          strength: {number: 27000, guns: 18},
+          casualties: "8,000 dead or wounded, 7000 captured, 18 guns"
         }),
         army_two: JSON.stringify({
-          beligerents:[["",],["",]],
-          commanders: [["P", ],["", ]],
-          strength: {},
-          casualties: ""
+          beligerents:[["Kingdom of France", france]],
+          commanders: [["Louis II de Bourbon", france ],[" Marquis de La Ferte", france ],["Marquis d'Espenan",france],["Comte de Gassion", france]],
+          strength: {number: 23000, guns: 14},
+          casualties: "4000 dead or wounded"
         }),
         questions: JSON.stringify({
           question1: {
-            text: "",
+            text: "What stopped Louis de Conde from allowing the isolated Spanish infantry to surrender?",
             answerOptions:[
-              {answerText: "", isCorrect:false},
-              {answerText: "", isCorrect:true},
-              {answerText: "", isCorrect:false},
+              {answerText: "His advisors", isCorrect:false},
+              {answerText: "Being fired on by spanish forces when riding to accept their surrender", isCorrect:true},
+              {answerText: "A bad omen earlier in the day", isCorrect:false},
             ]
           },
           question2: {
-            text: "?",
+            text: "Why did France enter the war on the side of the Protestants?",
             answerOptions:[
-              {answerText: "", isCorrect:false},
-              {answerText: "", isCorrect:true},
-              {answerText: "", isCorrect:false},
+              {answerText: "To gain land from Spain", isCorrect:false},
+              {answerText: "Their alliance with protestant Sweden", isCorrect:false},
+              {answerText: "To limit the influence and power of the Habsburgs", isCorrect:true},
             ]
           },
          
@@ -302,26 +304,26 @@ module.exports = {
       },
       {
         // START OF BATTLE OBJECT
-        prelude: "",
+        prelude: "After Breitenfeld, the french suffered a considerable defeat in 1643, at the battle of Tuttlingen against Bavarian, imperial and Spanish troops led by Franz von mercy and Johanne Von Werth.The French army was ambushed and destroyed, with casualties of 11,000 men killed or wounded. The french were forced to recall Field Marshal Viscomte De Turenne to handle the war in Germany. The Duke of Bavaria decided to capitalise on the weaknened french situation by sending Von Mercy and his troops towards Turenne, near Freiburg. Von Mercy's larger and organised force forced the French Garrison to hand over the city. Louis de Conde was dispatched with an army to protect and/or retake the city",
         name: "Freiburg",
-        description: "",
-        imageUrl: "",
-        result: "",
+        description: "The 3rd of August saw an attempted two-pronged French attack, with Turenne attempting a flanking attack an Louis conde attempting a frontal atack. The french suffered heavy casualties and both attacks were halted due to rain and nightfall. The 5th of August saw the french lose approximately half their army due to repeated waves of uncoordinated attacks, capitalised on by Von Mercy's forces. The 9th of August saw the french try to cut off Bavarian supplies, however they were outmaneuvered by Von mercy who relocated his army to secure supplies and ammunition. The Bavarians were able to perform a successful fighting retreat to Villingen, without losing many casualties.",
+        imageUrl: "https://upload.wikimedia.org/wikipedia/commons/thumb/5/51/H._Grobet_-_Cond%C3%A9_%C3%A0_la_bataille_de_Fribourg-en-Brisgau_%281644%29.jpg/1024px-H._Grobet_-_Cond%C3%A9_%C3%A0_la_bataille_de_Fribourg-en-Brisgau_%281644%29.jpg",
+        result: "Disputed",
         year: "1644",
-        date: "",
+        date: " 3,5 and 9 August 1644",
         latitude: "47.9955",
         longitude: "7.8522",
         army_one: JSON.stringify({
-          beligerents:[["",],["",],["", ]],
-          commanders: [["",],["",],["", ]],
-          strength: {},
-          casualties: ""
+          beligerents:[["Holy Roman Empire",hre],["Electorate of Bavaria",bavaria]],
+          commanders: [["Franz von Mercy",bavaria]],
+          strength: {number: 16800, guns: 20},
+          casualties: "2500-6800"
         }),
         army_two: JSON.stringify({
-          beligerents:[["",],["",]],
-          commanders: [["P", ],["", ]],
-          strength: {},
-          casualties: ""
+          beligerents:[["Kingdom of France",france]],
+          commanders: [["Louis de Bourbon",france ],["Vicomte de Turenne", france ]],
+          strength: {number: 20000, guns: 37},
+          casualties: "5000-8000"
         }),
         questions: JSON.stringify({
           question1: {
