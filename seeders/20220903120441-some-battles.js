@@ -24,7 +24,7 @@ module.exports = {
         // START OF BATTLE OBJECT
         prelude: "The naming of the fiercely devout Roman catholic Ferdinand II as Holy Roman Emperor and king of Bohemia (precursor to czechia), led to the mostly protestant population of Bohemia fearing the loss of religious freedom, rights and autonomy. In response to perceived violations of the royal assurances of religious freedom, a group of Bohemian noblemen met with representatives of the emperor at the royal Prague Castle. The meeting ended, and a rebellion begun with the Royal representatives being thrown out of a window and seriously injured upon landing on a large pile of manure. Emperor Ferdinand II set out to conquer Bohemia and quash the rebellion, with an army under Field Marshal Tilly.",
         name: "White Mountain",
-        description: "A small imperial force was sent to probe the protestant rear, causing the surprised Bohemians to retreat. Tilly quickly sent in reinforcements, causing the Bohemian rear forces to crumble. The protestant Christian II of denmark tried to support his bohemian allies with a cavalry charge, which was countered by Tilly's cavalry and repelled. The Bohemian infantry, only now approaching the imperial army, retreated after seeing their cavalry retreat. The protestant army scattered, the battle lasting only one hour.",
+        description: "A small imperial force was sent to probe the protestant rear, causing the surprised Bohemians to retreat. Tilly quickly sent in reinforcements, causing the Bohemian rear forces to crumble. The protestant Christian II, prince of ANhalt-Bernburg, tried to support his bohemian allies with a cavalry charge, which was countered by Tilly's cavalry and repelled. The Bohemian infantry, only now approaching the imperial army, retreated after seeing their cavalry retreating. The protestant army scattered, the battle lasting only one hour.",
         imageUrl: "https://upload.wikimedia.org/wikipedia/commons/0/02/The_Battle_of_White_Mountain_%28by_Peter_Snayers%29.jpg",
         result: "Catholic Imperial-Spanish victory",
         year: "1620",
@@ -53,14 +53,6 @@ module.exports = {
             ]
           },
           question2: {
-            text: "Why did the Bohemian infantry retreat?",
-            answerOptions:[
-              {answerText: "They forgot their weapons", isCorrect:false},
-              {answerText: "They were attacked by another army", isCorrect:true},
-              {answerText: "They saw their own cavalry retreating", isCorrect:false},
-            ]
-          },
-          question3: {
             text: "What triggered the rebellion?",
             answerOptions:[
               {answerText: "Lack of food", isCorrect:false},
@@ -77,52 +69,44 @@ module.exports = {
       },
       {
         // START OF BATTLE OBJECT
-        prelude: "",
+        prelude: "Christian IV of Denmark, ruler of the Duchy of Holstein ( a part of the holy roman empire) and member of the protestant Lower Saxon circle, remained neutral during the early stages of the war, following the Bohemian revolt. He and the other members increasingly feared that Emperor Ferdinand intended to retake former catholic lands in North-West Germany, now held by protestants. This fear was confirmed when Catholic league forces led by the Count of tilly, and an Imperial army under Albrecht von Wallenstein, attacked Magdeburg. Christian was appointed commander of the saxon forces.",
         name: "Lutter",
-        description: "",
-        imageUrl: "",
+        description: "The Danish-German army led by Christian abandoned their attempt to assist nearby protestant fortresses at Munden, Northeim and Gottingem, following their capture by the count of Tilly and his forces. After harrassment by Tilly's cavalry, Christian decided to make a stand at Lutter am Barenberge. The imperial infantry broke through the Danish line on three occasions but each time was repulsed by a cavalry counter-attack. Eventually, the Danish army was no longer able to maintain its ground and when its entire artillery fell into the hands of the enemy, panic set in and the Danes retreated towards the town of Stade.",
+        imageUrl: "https://tabletopdeutschland.files.wordpress.com/2015/06/lutter-am-barenberge-26.jpg",
         result: "",
         year: "1626",
-        date: "",
+        date: "Imperial Victory",
         latitude: "51.99",
         longitude: "10.271111",
         army_one: JSON.stringify({
-          beligerents:[["",],["",],["", ]],
-          commanders: [["",],["",],["", ]],
-          strength: {},
+          beligerents:[["Holy Roman Empire",hre],["Catholic League", catholic]],
+          commanders: [["Count of Tilly", hre ],["Graf Anholt", hre ]],
+          strength: {number:24000, guns: 22},
           casualties: ""
         }),
         army_two: JSON.stringify({
-          beligerents:[["",],["",]],
-          commanders: [["P", ],["", ]],
-          strength: {},
+          beligerents:[["Denmark-Norway",denmarkNorway]],
+          commanders: [["Christian IV", denmarkNorway],["Philip of Hesse-Kassel", denmarkNorway],["Fuchs von Bimbach",denmarkNorway ]],
+          strength: {number: 21000, guns: 20},
           casualties: ""
         }),
         questions: JSON.stringify({
           question1: {
-            text: "",
+            text: "What did Christian IV and his fellow lower saxon circle members fear the emperor might do?",
             answerOptions:[
-              {answerText: "", isCorrect:false},
-              {answerText: "", isCorrect:true},
-              {answerText: "", isCorrect:false},
+              {answerText: "Confiscate protestant lands in north-west germany", isCorrect:true},
+              {answerText: "Increase taxes", isCorrect:true},
+              {answerText: "Forbid the raising of pigs", isCorrect:false},
             ]
           },
           question2: {
-            text: "?",
+            text: "What caused Danish forces to panic and retreat",
             answerOptions:[
-              {answerText: "", isCorrect:false},
-              {answerText: "", isCorrect:true},
-              {answerText: "", isCorrect:false},
+              {answerText: "A bigger, more catholic army", isCorrect:false},
+              {answerText: "The capture of their artillery guns", isCorrect:true},
+              {answerText: "The capture of their camp", isCorrect:false},
             ]
           },
-          question3: {
-            text: "?",
-            answerOptions:[
-              {answerText: "", isCorrect:false},
-              {answerText: "", isCorrect:true},
-              {answerText: "", isCorrect:false},
-            ]
-          }
          
         }),
         createdAt: new Date(),
@@ -169,14 +153,6 @@ module.exports = {
               {answerText: "", isCorrect:false},
             ]
           },
-          question3: {
-            text: "?",
-            answerOptions:[
-              {answerText: "", isCorrect:false},
-              {answerText: "", isCorrect:true},
-              {answerText: "", isCorrect:false},
-            ]
-          }
          
         }),
         createdAt: new Date(),
@@ -223,14 +199,6 @@ module.exports = {
               {answerText: "", isCorrect:false},
             ]
           },
-          question3: {
-            text: "?",
-            answerOptions:[
-              {answerText: "", isCorrect:false},
-              {answerText: "", isCorrect:true},
-              {answerText: "", isCorrect:false},
-            ]
-          }
          
         }),
         createdAt: new Date(),
@@ -277,14 +245,6 @@ module.exports = {
               {answerText: "", isCorrect:false},
             ]
           },
-          question3: {
-            text: "?",
-            answerOptions:[
-              {answerText: "", isCorrect:false},
-              {answerText: "", isCorrect:true},
-              {answerText: "", isCorrect:false},
-            ]
-          }
          
         }),
         createdAt: new Date(),
@@ -331,14 +291,6 @@ module.exports = {
               {answerText: "", isCorrect:false},
             ]
           },
-          question3: {
-            text: "?",
-            answerOptions:[
-              {answerText: "", isCorrect:false},
-              {answerText: "", isCorrect:true},
-              {answerText: "", isCorrect:false},
-            ]
-          }
          
         }),
         createdAt: new Date(),
@@ -385,14 +337,6 @@ module.exports = {
               {answerText: "", isCorrect:false},
             ]
           },
-          question3: {
-            text: "?",
-            answerOptions:[
-              {answerText: "", isCorrect:false},
-              {answerText: "", isCorrect:true},
-              {answerText: "", isCorrect:false},
-            ]
-          }
          
         }),
         createdAt: new Date(),
@@ -439,14 +383,6 @@ module.exports = {
               {answerText: "", isCorrect:false},
             ]
           },
-          question3: {
-            text: "?",
-            answerOptions:[
-              {answerText: "", isCorrect:false},
-              {answerText: "", isCorrect:true},
-              {answerText: "", isCorrect:false},
-            ]
-          }
          
         }),
         createdAt: new Date(),
@@ -493,14 +429,6 @@ module.exports = {
               {answerText: "", isCorrect:false},
             ]
           },
-          question3: {
-            text: "?",
-            answerOptions:[
-              {answerText: "", isCorrect:false},
-              {answerText: "", isCorrect:true},
-              {answerText: "", isCorrect:false},
-            ]
-          }
          
         }),
         createdAt: new Date(),
@@ -547,14 +475,6 @@ module.exports = {
               {answerText: "", isCorrect:false},
             ]
           },
-          question3: {
-            text: "?",
-            answerOptions:[
-              {answerText: "", isCorrect:false},
-              {answerText: "", isCorrect:true},
-              {answerText: "", isCorrect:false},
-            ]
-          }
          
         }),
         createdAt: new Date(),
@@ -601,14 +521,6 @@ module.exports = {
               {answerText: "", isCorrect:false},
             ]
           },
-          question3: {
-            text: "?",
-            answerOptions:[
-              {answerText: "", isCorrect:false},
-              {answerText: "", isCorrect:true},
-              {answerText: "", isCorrect:false},
-            ]
-          }
          
         }),
         createdAt: new Date(),
@@ -655,14 +567,6 @@ module.exports = {
               {answerText: "", isCorrect:false},
             ]
           },
-          question3: {
-            text: "?",
-            answerOptions:[
-              {answerText: "", isCorrect:false},
-              {answerText: "", isCorrect:true},
-              {answerText: "", isCorrect:false},
-            ]
-          }
          
         }),
         createdAt: new Date(),
