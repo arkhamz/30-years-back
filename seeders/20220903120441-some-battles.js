@@ -164,7 +164,7 @@ module.exports = {
       },
       {
         // START OF BATTLE OBJECT
-        prelude: "Protestant Sweden's entrance into the war, led by king Gustavus Adolphus, in 1630 was considered a minor annoyance to the Catholic league and its allies. German protestant princes also showed little interest in joining the Swedish cause. The sacking and massacre of the sweden-allied city of Magdeburg by Imperial troops proved to be a valuable recruiting tool for the swedes, attracting German princly support for the swedish cause. In order for the swedes to attack imperial troops in the south, they needed to pass through saxony. In order for Imperial forces to attack the swedes, they too had to pass through saxony.",
+        prelude: "Protestant Sweden's entrance into the war, led by king Gustavus Adolphus, in 1630 was considered a minor annoyance to the Catholic league and its allies. German protestant princes also showed little interest in joining the Swedish cause. The sacking and massacre of the sweden-allied city of Magdeburg by Imperial troops proved to be a valuable recruiting tool for the swedes, attracting french, prussian and German princly support for the swedish cause. In order for the swedes to attack imperial troops in the south, they needed to pass through saxony. In order for Imperial forces to attack the swedes, they too had to pass through saxony.",
         name: "Breitenfeld",
         description: "The armies drew up on a plain near the village of Breitenfeld, a few miles outside the walls of Leipzig. At first, von Pappenheim’s reckless gamble seemed about to pay off: at the first charge of his cavalry, the raw Saxon levies broke and fled the field. However, Gustavus nimbly turned his line to prevent Imperial forces attacking his rear. A daring Swedish cavalry raid captured all of the Imperial artillery, which was turned against its owners. Artillery pounded the Imperial forces until night fell. Imperial armies were utterly destroyed, losing two-thirds of their men and all their artillery and supplies. In a stroke, Gustavus had made himself master of Germany.",
         imageUrl: "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c6/Gustave_Adolphe_at_Breitenfeld-Johann_Walter-f3706497.jpg/1280px-Gustave_Adolphe_at_Breitenfeld-Johann_Walter-f3706497.jpg",
@@ -210,13 +210,13 @@ module.exports = {
       },
       {
         // START OF BATTLE OBJECT
-        prelude: "",
+        prelude: "Gustavus Adolphus's victories at Breitenfeld in 1631, and Rain in 1632, drew him deep into Southern Germany where his attack on the imperial camp putside the city of Furth was bloodily repulsed by Albrecht von Wallenstein. The swedes later made contact with Wallenstein's troops at Halle, then at a stream 5-6 kilometres south of the city of Lutzen. Wallenstein requested reinforcements while the swedes camped 2 kilometres outside the town. Imperial troops worked through the night building defensive positions.",
         name: "Lutzen",
-        description: "",
-        imageUrl: "",
-        result: "",
+        description: "The first part of the battle featured a series of frontal attacks by the Swedes, which nearly succeeded before it was repulsed by a cavalry charge led by Pappenheim. While trying to reform his shattered infantry, Gustavus was killed in a skirmish with Imperial troops, but his subordinates rallied their men and supported by close range artillery fire overran the Imperial centre just before nightfall. Wallenstein withdrew in good order but had to abandon his wounded, many of his guns and most of his supply train. Despite the loss of their king, the Swedes continued the war under the direction of Axel Oxenstierna and, together with their German allies, formed the Heilbronn League in April 1633. ",
+        imageUrl: "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a0/Death_of_King_Gustav_II_Adolf_of_Sweden_at_the_Battle_of_L%C3%BCtzen_%28Carl_Wahlbom%29_-_Nationalmuseum_-_18031.tif/lossy-page1-1280px-Death_of_King_Gustav_II_Adolf_of_Sweden_at_the_Battle_of_L%C3%BCtzen_%28Carl_Wahlbom%29_-_Nationalmuseum_-_18031.tif.jpg",
+        result: "Swedish anti-imperial victory",
         year: "1632",
-        date: "",
+        date: "16 November 1632",
         latitude: "51.25",
         longitude: "12.133333",
         army_one: JSON.stringify({
