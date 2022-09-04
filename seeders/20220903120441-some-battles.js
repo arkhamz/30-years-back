@@ -304,9 +304,9 @@ module.exports = {
       },
       {
         // START OF BATTLE OBJECT
-        prelude: "After Breitenfeld, the french suffered a considerable defeat in 1643, at the battle of Tuttlingen against Bavarian, imperial and Spanish troops led by Franz von mercy and Johanne Von Werth.The French army was ambushed and destroyed, with casualties of 11,000 men killed or wounded. The french were forced to recall Field Marshal Viscomte De Turenne to handle the war in Germany. The Duke of Bavaria decided to capitalise on the weaknened french situation by sending Von Mercy and his troops towards Turenne, near Freiburg. Von Mercy's larger and organised force forced the French Garrison to hand over the city. Louis de Conde was dispatched with an army to protect and/or retake the city",
+        prelude: "After Breitenfeld, the french suffered a considerable defeat in 1643, at the battle of Tuttlingen against Bavarian, imperial and Spanish troops led by Franz von mercy and Johanne Von Werth.The French army was ambushed and destroyed, with casualties of 11,000 men killed or wounded. The french were forced to recall Field Marshal Viscomte De Turenne to handle the war in Germany. The Duke of Bavaria decided to capitalise on the weakened french situation by sending Von Mercy and his troops towards Turenne, near Freiburg. Von Mercy's larger and organised force forced the French Garrison to hand over the city. Louis de Conde was dispatched with an army to protect and/or retake the city",
         name: "Freiburg",
-        description: "The 3rd of August saw an attempted two-pronged French attack, with Turenne attempting a flanking attack an Louis conde attempting a frontal atack. The french suffered heavy casualties and both attacks were halted due to rain and nightfall. The 5th of August saw the french lose approximately half their army due to repeated waves of uncoordinated attacks, capitalised on by Von Mercy's forces. The 9th of August saw the french try to cut off Bavarian supplies, however they were outmaneuvered by Von mercy who relocated his army to secure supplies and ammunition. The Bavarians were able to perform a successful fighting retreat to Villingen, without losing many casualties.",
+        description: "The 3rd of August saw an attempted two-pronged French attack, with Turenne attempting a flanking attack an Louis conde attempting a frontal atack. The french suffered heavy casualties and both attacks were halted due to rain, nightfall and Bavarian resistance. The 5th of August saw the french lose approximately half their army due to repeated waves of uncoordinated attacks, capitalised on by Von Mercy's forces. The 9th of August saw the french try to cut off Bavarian supplies, however they were outmaneuvered by Von mercy who had already secretly relocated his main army to secure supplies and ammunition. The Bavarians were able to perform a successful fighting retreat to Villingen, without losing many casualties.",
         imageUrl: "https://upload.wikimedia.org/wikipedia/commons/thumb/5/51/H._Grobet_-_Cond%C3%A9_%C3%A0_la_bataille_de_Fribourg-en-Brisgau_%281644%29.jpg/1024px-H._Grobet_-_Cond%C3%A9_%C3%A0_la_bataille_de_Fribourg-en-Brisgau_%281644%29.jpg",
         result: "Disputed",
         year: "1644",
@@ -327,19 +327,19 @@ module.exports = {
         }),
         questions: JSON.stringify({
           question1: {
-            text: "",
+            text: "What thwarted the two-pronged french attack on the 3rd August?",
             answerOptions:[
-              {answerText: "", isCorrect:false},
-              {answerText: "", isCorrect:true},
-              {answerText: "", isCorrect:false},
+              {answerText: "Rain, nightfall and Bavarian resistance", isCorrect:true},
+              {answerText: "poor planning", isCorrect:false},
+              {answerText: "Logistical issues", isCorrect:false},
             ]
           },
           question2: {
-            text: "?",
+            text: "Was Von Mercy's army destroyed whilst retreating on the 9th August?",
             answerOptions:[
-              {answerText: "", isCorrect:false},
-              {answerText: "", isCorrect:true},
-              {answerText: "", isCorrect:false},
+              {answerText: "Yes'", isCorrect:false},
+              {answerText: "No", isCorrect:true},
+              {answerText: "Unsure", isCorrect:false},
             ]
           },
          
