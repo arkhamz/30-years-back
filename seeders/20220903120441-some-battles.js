@@ -1,4 +1,5 @@
 'use strict';
+const { devNull } = require("os");
 const { pathToFileURL } = require("url");
 
 const bavaria = pathToFileURL("../assets/bavaria.png")
@@ -15,6 +16,8 @@ const saxony = pathToFileURL("../assets/saxony.png")
 const spanish = pathToFileURL("../assets/spanish.png")
 const swedish = pathToFileURL("../assets/swedish.png")
 const transylvania = pathToFileURL("../assets/transylvania.png")
+const stralsund = pathToFileURL("../assets/stralsund.png")
+const scots = pathToFileURL("../assets/scots.png")
 
 module.exports = {
   async up (queryInterface, Sequelize) {
@@ -69,13 +72,13 @@ module.exports = {
       },
       {
         // START OF BATTLE OBJECT
-        prelude: "Christian IV of Denmark, ruler of the Duchy of Holstein ( a part of the holy roman empire) and member of the protestant Lower Saxon circle, remained neutral during the early stages of the war, following the Bohemian revolt. He and the other members increasingly feared that Emperor Ferdinand intended to retake former catholic lands in North-West Germany, now held by protestants. This fear was confirmed when Catholic league forces led by the Count of tilly, and an Imperial army under Albrecht von Wallenstein, attacked Magdeburg. Christian was appointed commander of the saxon forces.",
+        prelude: "Christian IV of Denmark, ruler of the Duchy of Holstein ( a part of the holy roman empire) and member of the protestant Lower Saxon circle, remained neutral during the early stages of the war, following the Bohemian revolt. He and the other members increasingly feared that Emperor Ferdinand intended to retake former catholic lands in North-West Germany, now held by protestants. This fear was confirmed when Catholic league forces led by the Count of tilly, and an Imperial army under Albrecht von Wallenstein, attacked Magdeburg. Christian was appointed commander of the saxon forces, with Ernst von Mansfeld and Christian of Brunswick as fellow commanders.",
         name: "Lutter",
         description: "The Danish-German army led by Christian abandoned their attempt to assist nearby protestant fortresses at Munden, Northeim and Gottingem, following their capture by the count of Tilly and his forces. After harrassment by Tilly's cavalry, Christian decided to make a stand at Lutter am Barenberge. The imperial infantry broke through the Danish line on three occasions but each time was repulsed by a cavalry counter-attack. Eventually, the Danish army was no longer able to maintain its ground and when its entire artillery fell into the hands of the enemy, panic set in and the Danes retreated towards the town of Stade.",
         imageUrl: "https://tabletopdeutschland.files.wordpress.com/2015/06/lutter-am-barenberge-26.jpg",
-        result: "",
+        result: "Imperial Victory",
         year: "1626",
-        date: "Imperial Victory",
+        date: "27 August 1626",
         latitude: "51.99",
         longitude: "10.271111",
         army_one: JSON.stringify({
@@ -115,42 +118,42 @@ module.exports = {
       },
       {
         // START OF BATTLE OBJECT
-        prelude: "",
-        name: "Stralsund",
-        description: "",
-        imageUrl: "",
-        result: "",
+        prelude: "The defeat of Ernst von Mansfeld and Christian IV of Denmark by Albrecht von Wallenstein and Tilly, respectively, led to Christian's expulsion from North Germany. This left the Duchy of Pomerania, which included Stralsund, vulnerable. It declared neutrality and was occupied by Imperial forces led by Albrecht von Wallenstein. Stralsund refused to submit and was besieged by Wallenstein's forces. It sought military aid from Denmark, and then from Sweden",
+        name: "Siege of Stralsund",
+        description: "Wallenstein organised regular attacks on the city's fortifications, which were defended by Sottish mercenaries under the employment of the Danish. Wallenstein's forces successfully captured the outer regions of the fortifications, then proceeded to bombard the city with artillery. The city later received reinforcements via swedish boats filled with Danish-scottish troops who immediately joined the defence of the city. Heavy rainfall during late july turned the battlefield into a marsh, making the attacker's situation untenable. Wallenstein ended the siege on 4th August",
+        imageUrl: "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a1/Belagerung_Stralsunds_durch_Wallenstein_2.jpg/1000px-Belagerung_Stralsunds_durch_Wallenstein_2.jpg",
+        result: "Anti-Imperial victory",
         year: "1628",
-        date: "",
+        date: "May to 4 August 1628",
         latitude: "54.309167",
         longitude: "13.081944",
         army_one: JSON.stringify({
-          beligerents:[["",],["",],["", ]],
-          commanders: [["",],["",],["", ]],
-          strength: {},
-          casualties: ""
+          beligerents:[["Holy Roman Empire", hre]],
+          commanders: [["Albrecht von Wallenstein",hre],["Hans Georg von Arnim",hre]],
+          strength: {number: 0, guns: 0},
+          casualties: "unknown"
         }),
         army_two: JSON.stringify({
-          beligerents:[["",],["",]],
-          commanders: [["P", ],["", ]],
-          strength: {},
-          casualties: ""
+          beligerents:[["Denmark-Norway",denmarkNorway],["Kingdom of Sweden",swedish],["Stralsund",stralsund]],
+          commanders: [["Heinrich Holk", denmarkNorway ],["Alexander Seaton",scots ],["Alexander Lindsay",scots ],["Robert Munro",scots ],["Alexander Leslie",swedish ]],
+          strength: {number:7300 , guns: 0},
+          casualties: "unknown"
         }),
         questions: JSON.stringify({
           question1: {
-            text: "",
+            text: "What weather made the battlefield/attacker's situation untenable",
             answerOptions:[
-              {answerText: "", isCorrect:false},
-              {answerText: "", isCorrect:true},
-              {answerText: "", isCorrect:false},
+              {answerText: "Heavy snow", isCorrect:false},
+              {answerText: "Heavy wind", isCorrect:false},
+              {answerText: "Heavy rainfall", isCorrect:true},
             ]
           },
           question2: {
-            text: "?",
+            text: "Which nation did the scots fight for?",
             answerOptions:[
-              {answerText: "", isCorrect:false},
-              {answerText: "", isCorrect:true},
-              {answerText: "", isCorrect:false},
+              {answerText: "The Danish", isCorrect:false},
+              {answerText: "The Swedish", isCorrect:true},
+              {answerText: "The Spanish", isCorrect:false},
             ]
           },
          
@@ -161,42 +164,42 @@ module.exports = {
       },
       {
         // START OF BATTLE OBJECT
-        prelude: "",
+        prelude: "Protestant Sweden's entrance into the war, led by king Gustavus Adolphus, in 1630 was considered a minor annoyance to the Catholic league and its allies. German protestant princes also showed little interest in joining the Swedish cause. The sacking and massacre of the sweden-allied city of Magdeburg by Imperial troops proved to be a valuable recruiting tool for the swedes, attracting German princly support for the swedish cause. In order for the swedes to attack imperial troops in the south, they needed to pass through saxony. In order for Imperial forces to attack the swedes, they too had to pass through saxony.",
         name: "Breitenfeld",
-        description: "",
-        imageUrl: "",
-        result: "",
-        year: "163",
-        date: "",
+        description: "The armies drew up on a plain near the village of Breitenfeld, a few miles outside the walls of Leipzig. At first, von Pappenheim’s reckless gamble seemed about to pay off: at the first charge of his cavalry, the raw Saxon levies broke and fled the field. However, Gustavus nimbly turned his line to prevent Imperial forces attacking his rear. A daring Swedish cavalry raid captured all of the Imperial artillery, which was turned against its owners. Artillery pounded the Imperial forces until night fell. Imperial armies were utterly destroyed, losing two-thirds of their men and all their artillery and supplies. In a stroke, Gustavus had made himself master of Germany.",
+        imageUrl: "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c6/Gustave_Adolphe_at_Breitenfeld-Johann_Walter-f3706497.jpg/1280px-Gustave_Adolphe_at_Breitenfeld-Johann_Walter-f3706497.jpg",
+        result: "Swedish-Saxon Anti-imperial victory",
+        year: "1631",
+        date: "17 september 1631",
         latitude: "51.417778",
         longitude: "12.377778",
         army_one: JSON.stringify({
-          beligerents:[["",],["",],["", ]],
-          commanders: [["",],["",],["", ]],
-          strength: {},
-          casualties: ""
+          beligerents:[["Holy Roman Empire", hre],["Catholic League", catholic]],
+          commanders: [["Count of Tilly",hre],["Gottfried von Pappenheim", hre],["Egon von Furstenberg", hre ]],
+          strength: {number:37000, guns: 27},
+          casualties: "16,000 dead or captured"
         }),
         army_two: JSON.stringify({
-          beligerents:[["",],["",]],
-          commanders: [["P", ],["", ]],
-          strength: {},
-          casualties: ""
+          beligerents:[["Swedish Empire",swedish],["Saxony",saxony]],
+          commanders: [["Gustavus Adolphus",swedish ],["Gustav Horn",swedish ],["Johan Baner", swedish],["Lennart Torstensson",swedish ],["John George I",saxony ],["Hans Georg von Arnim",saxony ]],
+          strength: {number: 39000, guns: 56},
+          casualties: "5,100 dead"
         }),
         questions: JSON.stringify({
           question1: {
-            text: "",
+            text: "The sacking of what city rallied support to the swedish cause?",
             answerOptions:[
-              {answerText: "", isCorrect:false},
-              {answerText: "", isCorrect:true},
-              {answerText: "", isCorrect:false},
+              {answerText: "Mecklenburg", isCorrect:false},
+              {answerText: "Morenburg", isCorrect:false},
+              {answerText: "Magdeburg", isCorrect:true},
             ]
           },
           question2: {
-            text: "?",
+            text: "Which army was utterly destroyed?",
             answerOptions:[
-              {answerText: "", isCorrect:false},
-              {answerText: "", isCorrect:true},
-              {answerText: "", isCorrect:false},
+              {answerText: "The Imperial army", isCorrect:false},
+              {answerText: "The Swedish army", isCorrect:true},
+              {answerText: "The dutch army", isCorrect:false},
             ]
           },
          
