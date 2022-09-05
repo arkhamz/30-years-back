@@ -14,6 +14,9 @@ module.exports = {
       lastName: {
         type: Sequelize.STRING
       },
+      titles: {
+        type: Sequelize.JSONB
+      },
       loyalty: {
         type: Sequelize.STRING
       },

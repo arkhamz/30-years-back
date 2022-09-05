@@ -16,6 +16,7 @@ module.exports = (sequelize, DataTypes) => {
   commander.init({
     firstName: DataTypes.STRING,
     lastName: DataTypes.STRING,
+    titles: DataTypes.JSONB,
     loyalty: DataTypes.STRING,
     loyaltyImage: DataTypes.TEXT,
     imageUrl: DataTypes.STRING,
