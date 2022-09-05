@@ -17,6 +17,9 @@ module.exports = {
       loyalty: {
         type: Sequelize.STRING
       },
+      loyaltyImage: {
+        type: Sequelize.TEXT
+      },
       imageUrl: {
         type: Sequelize.STRING
       },
