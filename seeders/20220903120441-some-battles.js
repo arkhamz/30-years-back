@@ -1,24 +1,24 @@
 'use strict';
 const { pathToFileURL } = require("url");
 
-const bavaria = pathToFileURL("../assets/bavaria.png")
-const bohemia = pathToFileURL("../assets/bohemia.png")
-const catholic = pathToFileURL("../assets/catholic-league.png")
-const denmarkNorway = pathToFileURL("../assets/denmark-norway.png")
-const dutch = pathToFileURL("../assets/dutch.png")
-const hesseKassel = pathToFileURL("../assets/hesse-kassel.png")
-const hre = pathToFileURL("../assets/hre.png")
-const palatinate = pathToFileURL("../assets/palatinate.png")
-const prussia = pathToFileURL("../assets/prussia.png")
-const savoyard = pathToFileURL("../assets/savoyard.png")
-const saxony = pathToFileURL("../assets/saxony.png")
-const spanish = pathToFileURL("../assets/spanish.png")
-const swedish = pathToFileURL("../assets/swedish.png")
-const transylvania = pathToFileURL("../assets/transylvania.png")
-const stralsund = pathToFileURL("../assets/stralsund.png")
-const scots = pathToFileURL("../assets/scots.png")
-const france = pathToFileURL("../assets/france.png")
-const jankauPic = pathToFileURL("../assets/jankau.jpeg")
+const bavaria = pathToFileURL("../assets/bavaria.png").pathname
+const bohemia = pathToFileURL("../assets/bohemia.png").pathname
+const catholic = pathToFileURL("../assets/catholic-league.png").pathname
+const denmarkNorway = pathToFileURL("../assets/denmark-norway.png").pathname
+const dutch = pathToFileURL("../assets/dutch.png").pathname
+const hesseKassel = pathToFileURL("../assets/hesse-kassel.png").pathname
+const hre = pathToFileURL("../assets/hre.png").pathname
+const palatinate = pathToFileURL("../assets/palatinate.png").pathname
+const prussia = pathToFileURL("../assets/prussia.png").pathname;
+const savoyard = pathToFileURL("../assets/savoyard.png").pathname
+const saxony = pathToFileURL("../assets/saxony.png").pathname
+const spanish = pathToFileURL("../assets/spanish.png").pathname
+const swedish = pathToFileURL("../assets/swedish.png").pathname
+const transylvania = pathToFileURL("../assets/transylvania.png").pathname
+const stralsund = pathToFileURL("../assets/stralsund.png").pathname
+const scots = pathToFileURL("../assets/scots.png").pathname
+const france = pathToFileURL("../assets/france.png").pathname
+const jankauPic = pathToFileURL("../assets/jankau.jpeg").pathname
 
 module.exports = {
   async up (queryInterface, Sequelize) {
