@@ -22,6 +22,26 @@ router.get("/commanders", async function(req,res,next){
     }
 });
 
+//ENDPOINT FOR GETTING SPECIFIC COMMANDER
+router.get("/commanders/:id", async function(req,res,next){
+
+    const {id} = req.params;
+    const idNum = Number(id);
+
+    try {
+        const singleCommander = await Commander.findByPk(idNum);
+        if(!singleCommander){
+            return res.status(404).send("Commander with this id does not exist");
+        } else{
+            return res.status(200).send(singleCommander);
+        }      
+    } catch (e) {
+        console.log(e);
+        console.log(e.message);
+        next(e);
+    }
+})
+
 
 
 
