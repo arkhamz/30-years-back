@@ -20,11 +20,11 @@ module.exports = {
       loyalty: {
         type: Sequelize.STRING
       },
-      loyaltyImage: {
+      loyaltyImageUrl: {
         type: Sequelize.TEXT
       },
       imageUrl: {
-        type: Sequelize.STRING
+        type: Sequelize.TEXT
       },
       birthDate: {
         type: Sequelize.STRING
@@ -35,7 +35,7 @@ module.exports = {
       birthPlace: {
         type: Sequelize.STRING
       },
-      background: {
+      bio: {
         type: Sequelize.TEXT
       },
       createdAt: {

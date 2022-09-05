@@ -18,12 +18,12 @@ module.exports = (sequelize, DataTypes) => {
     lastName: DataTypes.STRING,
     titles: DataTypes.JSONB,
     loyalty: DataTypes.STRING,
-    loyaltyImage: DataTypes.TEXT,
-    imageUrl: DataTypes.STRING,
+    loyaltyImageUrl: DataTypes.TEXT,
+    imageUrl: DataTypes.TEXT,
     birthDate: DataTypes.STRING,
     died: DataTypes.STRING,
     birthPlace: DataTypes.STRING,
-    background: DataTypes.TEXT
+    bio: DataTypes.TEXT
   }, {
     sequelize,
     modelName: 'commander',
