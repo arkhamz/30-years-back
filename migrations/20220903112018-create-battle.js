@@ -20,6 +20,9 @@ module.exports = {
       imageUrl: {
         type: Sequelize.STRING
       },
+      video: {
+        type: Sequelize.STRING
+      },
       date: {
         type: Sequelize.STRING
       },
