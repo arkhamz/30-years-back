@@ -8,14 +8,11 @@ module.exports = {
         primaryKey: true,
         type: Sequelize.INTEGER
       },
-      firstName: {
+      fullName: {
         type: Sequelize.STRING
       },
-      lastName: {
+      title: {
         type: Sequelize.STRING
-      },
-      titles: {
-        type: Sequelize.JSONB
       },
       loyalty: {
         type: Sequelize.STRING

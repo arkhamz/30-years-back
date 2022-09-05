@@ -1,4 +1,9 @@
-const {battle:Battle} = require("./models");
+// const {battle:Battle} = require("./models");
+
+const {pathToFileURL} = require("url");
+
+const bavaria = pathToFileURL("./assets/bavaria.png");
+console.log(bavaria.pathname); //returns string of path
 
 async function getStuff(){
 
@@ -13,4 +18,4 @@ async function getStuff(){
     }
 }
 
-getStuff();
+// getStuff();

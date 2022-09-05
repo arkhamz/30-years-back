@@ -27,7 +27,7 @@ module.exports = {
         type: Sequelize.STRING
       },
       year:{
-        type: Sequelize.STRING
+        type: Sequelize.INTEGER
       },
       latitude: {
         type: Sequelize.STRING

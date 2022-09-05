@@ -19,7 +19,7 @@ module.exports = (sequelize, DataTypes) => {
     description: DataTypes.TEXT,
     imageUrl: DataTypes.TEXT,
     videoUrl: DataTypes.TEXT,
-    year: DataTypes.STRING,
+    year: DataTypes.INTEGER,
     date: DataTypes.STRING,
     latitude: DataTypes.STRING,
     longitude: DataTypes.STRING,
