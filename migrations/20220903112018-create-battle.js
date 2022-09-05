@@ -18,10 +18,10 @@ module.exports = {
         type: Sequelize.TEXT
       },
       imageUrl: {
-        type: Sequelize.STRING
+        type: Sequelize.TEXT
       },
-      video: {
-        type: Sequelize.STRING
+      videoUrl: {
+        type: Sequelize.TEXT
       },
       date: {
         type: Sequelize.STRING
