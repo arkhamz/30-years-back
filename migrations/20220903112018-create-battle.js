@@ -35,10 +35,10 @@ module.exports = {
       longitude: {
         type: Sequelize.STRING
       },
-      army_one: {
+      armyOne: {
         type: Sequelize.JSONB
       },
-      army_two: {
+      armyTwo: {
         type: Sequelize.JSONB
       },
       result:{

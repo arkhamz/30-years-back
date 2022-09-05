@@ -23,8 +23,8 @@ module.exports = (sequelize, DataTypes) => {
     date: DataTypes.STRING,
     latitude: DataTypes.STRING,
     longitude: DataTypes.STRING,
-    army_one: DataTypes.JSONB,
-    army_two: DataTypes.JSONB,
+    armyOne: DataTypes.JSONB,
+    armyTwo: DataTypes.JSONB,
     result: DataTypes.STRING,
     questions: DataTypes.JSONB
   }, {

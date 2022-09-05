@@ -38,13 +38,13 @@ module.exports = {
         date: "8 November 1620",
         latitude: "50.078333",
         longitude: "14.319444",
-        army_one: JSON.stringify({
+        armyOne: JSON.stringify({
           beligerents:[["Holy Roman Empire",hre],["Catholic League",catholic],["Spanish empire",spanish]],
           commanders: [["Johann von Tilly",catholic],["Maximilian I",catholic],["Charles de Bucquoy",hre]],
           strength: {number: 23000, guns:12},
           casualties: "650 killed and wounded"
         }),
-        army_two: JSON.stringify({
+        armyTwo: JSON.stringify({
           beligerents:[["Bohemian Confederation",bohemia],["Electoral Palatinate",palatinate]],
           commanders: [["Christian of Anhalt", palatinate],["Jindřich Matyáš Thurn", bohemia]],
           strength: {number: 21000, guns:10},
@@ -86,13 +86,13 @@ module.exports = {
         date: "27 August 1626",
         latitude: "51.99",
         longitude: "10.271111",
-        army_one: JSON.stringify({
+        armyOne: JSON.stringify({
           beligerents:[["Holy Roman Empire",hre],["Catholic League", catholic]],
           commanders: [["Count of Tilly", hre ],["Graf Anholt", hre ]],
           strength: {number:24000, guns: 22},
           casualties: "2,000 dead or wounded"
         }),
-        army_two: JSON.stringify({
+        armyTwo: JSON.stringify({
           beligerents:[["Denmark-Norway",denmarkNorway]],
           commanders: [["Christian IV", denmarkNorway],["Philip of Hesse-Kassel", denmarkNorway],["Fuchs von Bimbach",denmarkNorway ]],
           strength: {number: 21000, guns: 20},
@@ -133,13 +133,13 @@ module.exports = {
         date: "May to 4 August 1628",
         latitude: "54.309167",
         longitude: "13.081944",
-        army_one: JSON.stringify({
+        armyOne: JSON.stringify({
           beligerents:[["Holy Roman Empire", hre]],
           commanders: [["Albrecht von Wallenstein",hre],["Hans Georg von Arnim",hre]],
           strength: {number: 0, guns: 0},
           casualties: "unknown"
         }),
-        army_two: JSON.stringify({
+        armyTwo: JSON.stringify({
           beligerents:[["Denmark-Norway",denmarkNorway],["Kingdom of Sweden",swedish],["Stralsund",stralsund]],
           commanders: [["Heinrich Holk", denmarkNorway ],["Alexander Seaton",scots ],["Alexander Lindsay",scots ],["Robert Munro",scots ],["Alexander Leslie",swedish ]],
           strength: {number:7300 , guns: 0},
@@ -180,13 +180,13 @@ module.exports = {
         date: "17 september 1631",
         latitude: "51.417778",
         longitude: "12.377778",
-        army_one: JSON.stringify({
+        armyOne: JSON.stringify({
           beligerents:[["Holy Roman Empire", hre],["Catholic League", catholic]],
           commanders: [["Count of Tilly",hre],["Gottfried von Pappenheim", hre],["Egon von Furstenberg", hre ]],
           strength: {number:37000, guns: 27},
           casualties: "16,000 killed or captured"
         }),
-        army_two: JSON.stringify({
+        armyTwo: JSON.stringify({
           beligerents:[["Swedish Empire",swedish],["Saxony",saxony]],
           commanders: [["Gustavus Adolphus",swedish ],["Gustav Horn",swedish ],["Johan Baner", swedish],["Lennart Torstensson",swedish ],["John George I",saxony ],["Hans Georg von Arnim",saxony ]],
           strength: {number: 39000, guns: 56},
@@ -227,13 +227,13 @@ module.exports = {
         date: "16 November 1632",
         latitude: "51.25",
         longitude: "12.133333",
-        army_one: JSON.stringify({
+        armyOne: JSON.stringify({
           beligerents:[["Holy Roman Empire",hre],["Catholic League",catholic]],
           commanders: [["Albrecht von Wallenstein",hre],["Graf von Pappenheim",hre],["Heinrich Holk",hre ]],
           strength: {number: 19175, guns: 43},
           casualties: "5,160 killed, wounded or Captured."
         }),
-        army_two: JSON.stringify({
+        armyTwo: JSON.stringify({
           beligerents:[["Sweden",swedish],["Saxony",saxony],["Hesse-Kassel",hesseKassel]],
           commanders: [["Gustavus Adolphus",swedish ],["Bernard of Saxe-Weimar",swedish ],["Dodo van Knyphausen", swedish]],
           strength: {number: 18738, guns: 60},
@@ -274,13 +274,13 @@ module.exports = {
         date: "19 May 1643",
         latitude: "49.919444",
         longitude: "4.527778",
-        army_one: JSON.stringify({
+        armyOne: JSON.stringify({
           beligerents:[["Spanish Empire",spanish]],
           commanders: [["Francisco de Melo",spanish],["Duque de Alburquerque",spanish],["Condé Fontana", spanish ],["Graf von Isenburg",spanish]],
           strength: {number: 27000, guns: 18},
           casualties: "8,000 killed or wounded, 7000 captured"
         }),
-        army_two: JSON.stringify({
+        armyTwo: JSON.stringify({
           beligerents:[["Kingdom of France", france]],
           commanders: [["Louis prince de Condé", france ],[" Marquis de La Ferte", france ],["Marquis d'Espenan",france],["Comte de Gassion", france]],
           strength: {number: 23000, guns: 14},
@@ -321,13 +321,13 @@ module.exports = {
         date: " 3,5 and 9 August 1644",
         latitude: "47.9955",
         longitude: "7.8522",
-        army_one: JSON.stringify({
+        armyOne: JSON.stringify({
           beligerents:[["Holy Roman Empire",hre],["Electorate of Bavaria",bavaria]],
           commanders: [["Franz von Mercy",bavaria]],
           strength: {number: 16800, guns: 20},
           casualties: "2500-6800 killed or wounded"
         }),
-        army_two: JSON.stringify({
+        armyTwo: JSON.stringify({
           beligerents:[["Kingdom of France",france]],
           commanders: [["Louis prince de Condé",france ],["Vicomte de Turenne", france ]],
           strength: {number: 20000, guns: 37},
@@ -368,13 +368,13 @@ module.exports = {
         date: "6 March 1645",
         latitude: "49.6503",
         longitude: "14.7294",
-        army_one: JSON.stringify({
+        armyOne: JSON.stringify({
           beligerents:[["Holy Roman Empire",hre]],
           commanders: [["Von Hatzfeldt",hre],["Von Werth",bavaria],["Von Gotzen",hre ]],
           strength: {number: 16000, guns: 26},
           casualties: "4,000 killed or wounded, 4,450 captured"
         }),
-        army_two: JSON.stringify({
+        armyTwo: JSON.stringify({
           beligerents:[["Swedish Empire",swedish]],
           commanders: [["Lennart Torstensson",swedish ],["Arvid Wittenberg",swedish ],["Mortaigne de Potelles",swedish ],["Robert Douglas",scots ]],
           strength: {number: 16000, guns: 60},
@@ -415,13 +415,13 @@ module.exports = {
         date: "August 3 1645",
         latitude: "48.805556",
         longitude: "10.485833",
-        army_one: JSON.stringify({
+        armyOne: JSON.stringify({
           beligerents:[["Holy Roman Empire",hre],["Electorate of Bavaria",bavaria]],
           commanders: [["Franz von Mercy",bavaria],["Johann von Werth",hre]],
           strength: {number: 16000, guns: 28},
           casualties: "2,500 killed and wounded, 1,500 captured"
         }),
-        army_two: JSON.stringify({
+        armyTwo: JSON.stringify({
           beligerents:[["Kingdom of France",france],["Hesse-Kassel",hesseKassel]],
           commanders: [["Louis prince de Condé", france ],["Vicomte de Turenne", france ],["Johann von Geyso",hesseKassel]],
           strength: {number:17000, guns:27},
@@ -462,13 +462,13 @@ module.exports = {
         date: "17 May 1648",
         latitude: "48.4002",
         longitude: "10.5967",
-        army_one: JSON.stringify({
+        armyOne: JSON.stringify({
           beligerents:[["Electorate of Bavaria",bavaria],["Holy Roman Empire",hre]],
           commanders: [["Peter Melander von Holzappel",hre],["Raimondo Montecuccoli",hre],["Jost Maximilian von Bronckhorst-Gronsfeld",bavaria ]],
           strength: {number: 15370, guns:0},
           casualties: "1,897 killed or wounded"
         }),
-        army_two: JSON.stringify({
+        armyTwo: JSON.stringify({
           beligerents:[["Swedish Empire",swedish],["Kingdom of France",france]],
           commanders: [["Vicomte de Turenne",france ],["Carl Gustaf Wrangel", swedish ]],
           strength: {number: 22000, guns: 0},
@@ -509,13 +509,13 @@ module.exports = {
         date: "20 August 1648",
         latitude: "50.416667",
         longitude: "2.833333",
-        army_one: JSON.stringify({
+        armyOne: JSON.stringify({
           beligerents:[["Kingdom of Spain",spanish]],
           commanders: [["Archduke Leopold Wilhelm",spanish],["Jean de Beck", spanish]],
           strength: {number: 18000, guns:38},
           casualties: "8000 killed or captured"
         }),
-        army_two: JSON.stringify({
+        armyTwo: JSON.stringify({
           beligerents:[["Kingdom of France", france]],
           commanders: [["Louis prince de Condé",france ]],
           strength: {number: 16000, guns:18},
@@ -556,13 +556,13 @@ module.exports = {
         date: "25 July - 1 November 1648",
         latitude: "50.086389",
         longitude: "14.412222",
-        army_one: JSON.stringify({
+        armyOne: JSON.stringify({
           beligerents:[["Swedish Empire",]],
           commanders: [["Hans Christoff von Königsmarck",swedish],["Prince Carl Gustaf",swedish],["Arvid Wittenberg", swedish ]],
           strength: {number: 13500, guns:0},
           casualties: "500 killed, 700 wounded"
         }),
-        army_two: JSON.stringify({
+        armyTwo: JSON.stringify({
           beligerents:[["Bohemia",bohemia]],
           commanders: [["Count Rudolph Colloredo-Wallsee",bohemia ],["Jiří Plachý",bohemia],["Hans Georg Kauffer",bohemia]],
           strength: {number: 2000, guns:0},
