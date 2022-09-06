@@ -12,9 +12,9 @@ const commanderRouter = require("./routers/commanders");
 //register middleware body parsers/routers
 app.use(express.json());
 app.use(express.urlencoded({ extended: false }));
+app.use(corsMiddleWare());
 app.use(battleRouter);
 app.use(commanderRouter);
-app.use(corsMiddleWare());
 
 app.listen(PORT, function () {
   console.log(`Server listening on port ${PORT}`);
