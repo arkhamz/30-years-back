@@ -1,63 +1,63 @@
-'use strict';
+"use strict";
 module.exports = {
   async up(queryInterface, Sequelize) {
-    await queryInterface.createTable('battles', {
+    await queryInterface.createTable("battles", {
       id: {
         allowNull: false,
         autoIncrement: true,
         primaryKey: true,
-        type: Sequelize.INTEGER
+        type: Sequelize.INTEGER,
       },
       prelude: {
-        type: Sequelize.TEXT
+        type: Sequelize.TEXT,
       },
-      name:{
-        type: Sequelize.STRING
+      name: {
+        type: Sequelize.STRING,
       },
       description: {
-        type: Sequelize.TEXT
+        type: Sequelize.TEXT,
       },
       imageUrl: {
-        type: Sequelize.TEXT
+        type: Sequelize.TEXT,
       },
       videoUrl: {
-        type: Sequelize.TEXT
+        type: Sequelize.TEXT,
       },
       date: {
-        type: Sequelize.STRING
+        type: Sequelize.STRING,
       },
-      year:{
-        type: Sequelize.INTEGER
+      year: {
+        type: Sequelize.INTEGER,
       },
       latitude: {
-        type: Sequelize.STRING
+        type: Sequelize.INTEGER,
       },
       longitude: {
-        type: Sequelize.STRING
+        type: Sequelize.INTEGER,
       },
       armyOne: {
-        type: Sequelize.JSONB
+        type: Sequelize.JSONB,
       },
       armyTwo: {
-        type: Sequelize.JSONB
+        type: Sequelize.JSONB,
       },
-      result:{
-        type: Sequelize.STRING
+      result: {
+        type: Sequelize.STRING,
       },
       questions: {
-        type: Sequelize.JSONB
+        type: Sequelize.JSONB,
       },
       createdAt: {
         allowNull: false,
-        type: Sequelize.DATE
+        type: Sequelize.DATE,
       },
       updatedAt: {
         allowNull: false,
-        type: Sequelize.DATE
-      }
+        type: Sequelize.DATE,
+      },
     });
   },
   async down(queryInterface, Sequelize) {
-    await queryInterface.dropTable('battles');
-  }
+    await queryInterface.dropTable("battles");
+  },
 };
