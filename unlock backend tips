@@ -1,0 +1,8 @@
+Create User table with user,id,email,password
+Create level table with id, name
+
+create join table userProgress with user Id, level ID and status
+
+
+If correct questions are selected, POST request to userProgress with userID and battle/level ID
+create a thing in there

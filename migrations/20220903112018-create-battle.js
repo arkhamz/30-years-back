@@ -30,10 +30,10 @@ module.exports = {
         type: Sequelize.INTEGER,
       },
       latitude: {
-        type: Sequelize.INTEGER,
+        type: Sequelize.FLOAT,
       },
       longitude: {
-        type: Sequelize.INTEGER,
+        type: Sequelize.FLOAT,
       },
       armyOne: {
         type: Sequelize.JSONB,
