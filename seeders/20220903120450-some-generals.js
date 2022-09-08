@@ -1,13 +1,11 @@
 'use strict';
 
-const { pathToFileURL } = require("url");
-
-const denmarkNorway = pathToFileURL("../assets/denmark-norway.png").pathname
-const hre = pathToFileURL("../assets/hre.png").pathname
-const palatinate = pathToFileURL("../assets/palatinate.png").pathname
-const spanish = pathToFileURL("../assets/spanish.png").pathname
-const swedish = pathToFileURL("../assets/swedish.png").pathname
-const france = pathToFileURL("../assets/france.png").pathname
+const denmarkNorway = "https://i.imgur.com/FQeo5f8.png";
+const hre = "https://i.imgur.com/zg6kPGq.png";
+const palatinate = "https://i.imgur.com/EUhXyJs.png";
+const spanish = "https://i.imgur.com/aGJkxBf.png";
+const swedish = "https://i.imgur.com/FWz9l1C.png";
+const france = "https://i.imgur.com/YQXUCFz.png";
 
 module.exports = {
   async up (queryInterface, Sequelize) {

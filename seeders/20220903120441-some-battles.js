@@ -34,7 +34,7 @@ module.exports = {
           imageUrl:
             "https://upload.wikimedia.org/wikipedia/commons/0/02/The_Battle_of_White_Mountain_%28by_Peter_Snayers%29.jpg",
           videoUrl:
-            "https://youtu.be/ZIEU_um0GfQ?list=PLaBYW76inbX58d5W9sQG9DZVjdzqcALbF",
+            "https://www.youtube.com/embed/ZIEU_um0GfQ",
           result: "Catholic Imperial-Spanish victory",
           year: 1620,
           date: "8 November 1620",
@@ -102,7 +102,7 @@ module.exports = {
           imageUrl:
             "https://tabletopdeutschland.files.wordpress.com/2015/06/lutter-am-barenberge-26.jpg",
           videoUrl:
-            "https://youtu.be/GDd_2tbt_A8?list=PLaBYW76inbX58d5W9sQG9DZVjdzqcALbF",
+            "https://www.youtube.com/embed/GDd_2tbt_A8",
           result: "Imperial Victory",
           year: 1626,
           date: "27 August 1626",
@@ -169,7 +169,7 @@ module.exports = {
           imageUrl:
             "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a1/Belagerung_Stralsunds_durch_Wallenstein_2.jpg/1000px-Belagerung_Stralsunds_durch_Wallenstein_2.jpg",
           videoUrl:
-            "https://youtu.be/GDd_2tbt_A8?list=PLaBYW76inbX58d5W9sQG9DZVjdzqcALbF",
+            "https://www.youtube.com/embed/GDd_2tbt_A8",
           result: "Anti-Imperial victory",
           year: 1628,
           date: "May to 4 August 1628",
@@ -232,7 +232,7 @@ module.exports = {
           imageUrl:
             "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c6/Gustave_Adolphe_at_Breitenfeld-Johann_Walter-f3706497.jpg/1280px-Gustave_Adolphe_at_Breitenfeld-Johann_Walter-f3706497.jpg",
           videoUrl:
-            "https://youtu.be/56mj5OqcqdU?list=PLaBYW76inbX58d5W9sQG9DZVjdzqcALbF",
+            "https://www.youtube.com/embed/56mj5OqcqdU",
           result: "Swedish-Saxon Anti-imperial victory",
           year: 1631,
           date: "17 september 1631",
@@ -299,7 +299,7 @@ module.exports = {
           imageUrl:
             "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a0/Death_of_King_Gustav_II_Adolf_of_Sweden_at_the_Battle_of_L%C3%BCtzen_%28Carl_Wahlbom%29_-_Nationalmuseum_-_18031.tif/lossy-page1-1280px-Death_of_King_Gustav_II_Adolf_of_Sweden_at_the_Battle_of_L%C3%BCtzen_%28Carl_Wahlbom%29_-_Nationalmuseum_-_18031.tif.jpg",
           videoUrl:
-            "https://youtu.be/gvbM9xO5LWI?list=PLaBYW76inbX58d5W9sQG9DZVjdzqcALbF",
+            "https://www.youtube.com/embed/gvbM9xO5LWI",
           result: "Swedish anti-imperial victory",
           year: 1632,
           date: "16 November 1632",
@@ -364,7 +364,7 @@ module.exports = {
           imageUrl:
             "https://upload.wikimedia.org/wikipedia/commons/9/9f/Rocroi.jpg",
           videoUrl:
-            "https://youtu.be/zamiibdAyfw?list=PLaBYW76inbX58d5W9sQG9DZVjdzqcALbF",
+            "https://www.youtube.com/embed/zamiibdAyfw",
           result: "French victory",
           year: 1643,
           date: "19 May 1643",
@@ -438,7 +438,7 @@ module.exports = {
           imageUrl:
             "https://upload.wikimedia.org/wikipedia/commons/thumb/5/51/H._Grobet_-_Cond%C3%A9_%C3%A0_la_bataille_de_Fribourg-en-Brisgau_%281644%29.jpg/1024px-H._Grobet_-_Cond%C3%A9_%C3%A0_la_bataille_de_Fribourg-en-Brisgau_%281644%29.jpg",
           videoUrl:
-            "https://youtu.be/nDTjr2UjLl0?list=PLaBYW76inbX58d5W9sQG9DZVjdzqcALbF",
+            "https://www.youtube.com/embed/nDTjr2UjLl0",
           result: "Disputed",
           year: 1644,
           date: " 3,5 and 9 August 1644",
@@ -496,7 +496,7 @@ module.exports = {
             "The morning of the battle saw a swedish army column under scotsman Robert Douglas attempt a diversionary attack against the Imperial army's right. After leaving to assess this swedish move, Imperial commander Von Hatzfeldt found that his subordinate Von Gotzen, had misinterpreted his orders while he had gone, moving his entire force to a hill and getting stuck in the woods, allowing the swedes time to place artillery guns and infantry near them. After a furious argument, von Gotzen launched numerous attacks at the swedes, which were repulsed with heavy losses, until he himself was killed and his troops retreated. Hatzfeld held his position until nightfall, prompting Torstensson to move his artillery closer and fire at close range at the helpless Imperial infantry. Von Werth's Imperial cavalry charged and scattered the Swedish right, before stopping to loot the swedish baggage train, where they also captured Torstensson's wife. The swedish cavalry regrouped and counter-attacked the distracted Imperials, inflicting heavy casualties. The isolated Imperial infantry surrendered, many prisoners were taken, including Imperial commander Von Hatzfeldt.",
           imageUrl: `${jankauPic}`,
           videoUrl:
-            "https://youtu.be/tPfrVjZ-X60?list=PLaBYW76inbX58d5W9sQG9DZVjdzqcALbF",
+            "https://www.youtube.com/embed/tPfrVjZ-X60",
           result: "Swedish anti-imperial victory",
           year: 1645,
           date: "6 March 1645",
@@ -555,7 +555,7 @@ module.exports = {
           imageUrl:
             "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d8/Nordlingen.jpg/1024px-Nordlingen.jpg",
           videoUrl:
-            "https://youtu.be/c0O6CRQiChA?list=PLaBYW76inbX58d5W9sQG9DZVjdzqcALbF",
+            "https://www.youtube.com/embed/c0O6CRQiChA",
           result: "French victory",
           year: 1645,
           date: "August 3 1645",
@@ -618,7 +618,7 @@ module.exports = {
           imageUrl:
             "https://i.pinimg.com/originals/eb/5d/2a/eb5d2a4c4ea50a59b442cc617dd3442e.jpg",
           videoUrl:
-            "https://youtu.be/7aDHH9Ot-Cw?list=PLaBYW76inbX58d5W9sQG9DZVjdzqcALbF",
+            "https://www.youtube.com/embed/7aDHH9Ot-Cw",
           result: "Franco-Swedish victory",
           year: 1648,
           date: "17 May 1648",
@@ -690,7 +690,7 @@ module.exports = {
           imageUrl:
             "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a3/Pierre_Franque_-_Bataille_de_Lens_-_1648.jpg/1024px-Pierre_Franque_-_Bataille_de_Lens_-_1648.jpg",
           videoUrl:
-            "https://youtu.be/gmAg7t6oqEc?list=PLaBYW76inbX58d5W9sQG9DZVjdzqcALbF",
+            "https://www.youtube.com/embed/gmAg7t6oqEc",
           result: "French Victory",
           year: 1648,
           date: "20 August 1648",
@@ -753,7 +753,7 @@ module.exports = {
           imageUrl:
             "https://upload.wikimedia.org/wikipedia/commons/thumb/1/19/Battle_on_Charles_Bridge_-_1648.jpg/1280px-Battle_on_Charles_Bridge_-_1648.jpg",
           videoUrl:
-            "https://youtu.be/gmAg7t6oqEc?list=PLaBYW76inbX58d5W9sQG9DZVjdzqcALbF",
+            "https://www.youtube.com/embed/gmAg7t6oqEc",
           result: "Disputed",
           year: 1648,
           date: "25 July - 1 November 1648",
