@@ -5,8 +5,10 @@ async function getStuff(){
 
     try {
 
-        // query userprogress for records matching user Id
-        //include associated battles
+        // query should filter for records by userId=targetId and unlocked =true
+        //include associated battle
+        //returns an array of record objects with a battle object
+        //can map through the array to only return an array of battles
         const test = await userProgress.findAll({
             where: {
                 userId:2,
@@ -14,7 +16,7 @@ async function getStuff(){
             },
             include: [{model:battle}]
         });
-        console.log(test)
+        console.log(test[0].battle);
         
     } catch (e) {
         console.log(e);
