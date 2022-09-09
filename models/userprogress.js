@@ -3,7 +3,7 @@ const {
   Model
 } = require('sequelize');
 module.exports = (sequelize, DataTypes) => {
-  class level extends Model {
+  class userProgress extends Model {
     /**
      * Helper method for defining associations.
      * This method is not a part of Sequelize lifecycle.
@@ -11,13 +11,18 @@ module.exports = (sequelize, DataTypes) => {
      */
     static associate(models) {
       // define association here
+      userProgress.belongsTo(models.battle);
+      userProgress.belongsTo(models.user);
+
     }
   }
-  level.init({
-    name: {type: DataTypes.STRING, allowNull: false}
+  userProgress.init({
+    userId: {type:DataTypes.INTEGER,allowNull:false},
+    battleId: {type:DataTypes.INTEGER, allowNull:false},
+    unlocked: {type:DataTypes.BOOLEAN, allowNUll:false, defaultValue:false}
   }, {
     sequelize,
-    modelName: 'level',
+    modelName: 'userProgress',
   });
-  return level;
+  return userProgress;
 };

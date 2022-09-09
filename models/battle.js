@@ -9,6 +9,11 @@ module.exports = (sequelize, DataTypes) => {
      */
     static associate(models) {
       // define association here
+      //battle belongs to many users via battleId of userProgress table
+      battle.belongsToMany(models.user, {
+        through: "userProgress",
+        foreignKey: "battleId"
+      });
     }
   }
   battle.init(

@@ -1,15 +1,20 @@
-// const {battle:Battle} = require("./models");
+const {userProgress,battle,user} = require("./models");
 
-const {pathToFileURL} = require("url");
-
-const bavaria = pathToFileURL("./assets/bavaria.png");
-console.log(bavaria.pathname); //returns string of path
 
 async function getStuff(){
 
     try {
-        const test = await Battle.findOne();
-        console.log(test.questions.question1)
+
+        // query userprogress for records matching user Id
+        //include associated battles
+        const test = await userProgress.findAll({
+            where: {
+                userId:2,
+                unlocked: true,
+            },
+            include: [{model:battle}]
+        });
+        console.log(test)
         
     } catch (e) {
         console.log(e);
@@ -18,4 +23,4 @@ async function getStuff(){
     }
 }
 
-// getStuff();
+getStuff();

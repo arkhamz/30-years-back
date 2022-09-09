@@ -11,12 +11,16 @@ module.exports = (sequelize, DataTypes) => {
      */
     static associate(models) {
       // define association here
+      user.belongsToMany(models.battle, {
+        through:"userProgress",
+        foreignKey: "userId"
+      })
     }
   }
   user.init({
-    displayName: DataTypes.STRING,
-    email: DataTypes.STRING,
-    uid: DataTypes.STRING
+    displayName: {type:DataTypes.STRING, allowNull:false},
+    email: {type:DataTypes.STRING, allowNull:false},
+    uid: {type:DataTypes.STRING, allowNull:false}
   }, {
     sequelize,
     modelName: 'user',
