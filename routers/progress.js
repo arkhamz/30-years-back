@@ -42,6 +42,11 @@ router.post("/progress/new", async function(req,res,next){
     //get userId and battleId from req.body
     const {userId, battleId} = req.body;
 
+    if(!userId || !battleId){
+        return res.status(400).send("Invalid data provided")
+    }
+
+
     try {
         const newProgress = await userProgress.create({
             userId: userId,
@@ -51,8 +56,9 @@ router.post("/progress/new", async function(req,res,next){
         if(!newProgress){
             return res.status(400).send("Invalid data provided")
         }
-        return next();
-        
+
+        return res.status(200).send("added user progress")
+
     } catch (e) {
         console.log(e);
         console.log(e.message);

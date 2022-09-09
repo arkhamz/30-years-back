@@ -8,6 +8,10 @@ router.post("/users/new", async function(req,res,next){
     //get displayName, email and uid from req.body
     const {displayName, email, uid} = req.body;
 
+    if(!displayName  || !email || !uid){
+        return res.status(400)
+    }
+
     try {
 
         //Create new user on database, based on firebase user's details
@@ -20,9 +24,10 @@ router.post("/users/new", async function(req,res,next){
 
         if(!newUser){
             return res.status(400).send("Invalid data provided");
+        } else{
+            //return userId, signup thunk will use this to create user progress
+        return res.status(200).send({userId:newUser.dataValues.id});
         }
-
-        next();
     
     } catch (e) {
         console.log(e);
