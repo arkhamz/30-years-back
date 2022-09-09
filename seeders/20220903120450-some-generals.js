@@ -63,7 +63,7 @@ module.exports = {
       },{
         fullName: "Henri de La Tour d'Auvergne",
         title: "Viscount of Turenne",
-        loyalty: "Dutch Republic (1625-1633), Kingdom of France (1630-1675)",
+        loyalty: "Kingdom of France",
         loyaltyImageUrl: france,
         imageUrl: "https://upload.wikimedia.org/wikipedia/commons/thumb/7/78/Henri_de_la_Tour_d%27Auvergne%2C_Vicomte_de_Turenne_by_Circle_of_Philippe_de_Champaigne.jpg/800px-Henri_de_la_Tour_d%27Auvergne%2C_Vicomte_de_Turenne_by_Circle_of_Philippe_de_Champaigne.jpg",
         birthDate: "11 September 1611",
@@ -97,7 +97,7 @@ module.exports = {
         createdAt: new Date(),
         updatedAt: new Date()
       },{
-        fullName: "Albrecht Wenzel Eusebius von Wallenstein",
+        fullName: "Albrecht von Wallenstein",
         title: "Duke of Friedland, Supreme commander of the Imperial army",
         loyalty: "Holy Roman Empire",
         loyaltyImageUrl: hre,

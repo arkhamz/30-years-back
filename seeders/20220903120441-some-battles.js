@@ -100,7 +100,7 @@ module.exports = {
           description:
             "The Danish-German army led by Christian abandoned their attempt to assist nearby protestant fortresses at Munden, Northeim and Gottingem, following their capture by the count of Tilly and his forces. After harrassment by Tilly's cavalry, Christian decided to make a stand at Lutter am Barenberge. The imperial infantry broke through the Danish line on three occasions but each time was repulsed by a cavalry counter-attack. Eventually, the Danish army was no longer able to maintain its ground and when its entire artillery fell into the hands of the enemy, panic set in and the Danes retreated towards the town of Stade.",
           imageUrl:
-            "https://tabletopdeutschland.files.wordpress.com/2015/06/lutter-am-barenberge-26.jpg",
+            "https://i.imgur.com/6DVHDkM.jpg",
           videoUrl:
             "https://www.youtube.com/embed/GDd_2tbt_A8",
           result: "Imperial Victory",
