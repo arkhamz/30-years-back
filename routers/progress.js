@@ -1,4 +1,4 @@
-const {battle, userProgress} = require("../models");
+const {battle, userProgress,user} = require("../models");
 const express = require("express");
 const {Router} = express;
 const router = new Router();
@@ -51,14 +51,21 @@ router.get("/progress/:userId/battles", async function(req,res,next){
 router.post("/progress/new", async function(req,res,next){
 
     //get userId and battleId from req.body
-    const {userId, battleId} = req.body;
+    const {uid, battleId} = req.body;
 
-    if(!userId || !battleId){
+    if(!uid || !battleId){
         return res.status(400).send("Invalid data provided")
     }
 
 
     try {
+        //get database user by  matching uid
+        const dbUser = await user.findOne({
+            where: {uid: uid}
+        });
+        if(!dbUser) return res.status(404).send("db user not found");
+
+        const userId = dbUser.dataValues.id;
         const newProgress = await userProgress.create({
             userId: userId,
             battleId: battleId,
