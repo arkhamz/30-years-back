@@ -23,11 +23,22 @@ router.get("/progress/:userId/battles", async function(req,res,next){
             return res.status(404).send("Unavailable request");
         }
 
-        const battleArr = battleRecords.map(function(item,index,arr){
+        const battlesArr = battleRecords.map(function(item,index,arr){
             return item.battle;
         });
-        //send battle array as response
-        return res.status(200).send(battleArr);
+
+        // map battleArr to get array of battle IDs
+        const battlesIdArr = battlesArr.map(function(item,index,arr){
+            return item.id;
+        });
+        //get max ID
+        const progress = Math.max(...battlesIdArr);
+
+
+
+
+        //send battle array and progress (highest battle ID unlocked) response
+        return res.status(200).send({battlesArr, progress});
         
     } catch (e) {
         console.log(e);
