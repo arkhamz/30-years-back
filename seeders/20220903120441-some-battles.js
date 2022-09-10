@@ -66,8 +66,8 @@ module.exports = {
             strength: { number: 21000, guns: 10 },
             casualties: "2,800 killed and wounded",
           }),
-          questions: JSON.stringify({
-            question1: {
+          questions: JSON.stringify([
+            {
               text: "How long did the battle last?",
               answerOptions: [
                 { answerText: "3 hours", isCorrect: false },
@@ -75,19 +75,19 @@ module.exports = {
                 { answerText: "4 hours", isCorrect: false },
               ],
             },
-            question2: {
-              text: "What triggered the rebellion?",
+            {
+              text: "What triggered the Bohemian revolt?",
               answerOptions: [
                 { answerText: "Lack of food", isCorrect: false },
                 {
                   answerText:
-                    "Protestants throwing catholic imperial representatives out of a castle window",
+                    "Imperial representatives being thrown out of a castle window",
                   isCorrect: true,
                 },
-                { answerText: "religious harmony", isCorrect: false },
+                { answerText: "Religious harmony", isCorrect: false },
               ],
-            },
-          }),
+            }]
+          ),
           createdAt: new Date(),
           updatedAt: new Date(),
           //END OF BATTLE OBJECT
@@ -130,9 +130,9 @@ module.exports = {
             strength: { number: 21000, guns: 20 },
             casualties: "4,000 dead or wounded, 3,000 captured",
           }),
-          questions: JSON.stringify({
-            question1: {
-              text: "What did Christian IV and his fellow lower saxon circle members fear the emperor might do?",
+          questions: JSON.stringify(
+            [{
+              text: "What did Christian IV and the Lower Saxon Circle fear the emperor might do?",
               answerOptions: [
                 {
                   answerText:
@@ -143,7 +143,7 @@ module.exports = {
                 { answerText: "Forbid the raising of pigs", isCorrect: false },
               ],
             },
-            question2: {
+            {
               text: "What caused Danish forces to panic and retreat",
               answerOptions: [
                 { answerText: "A bigger, more devout army", isCorrect: false },
@@ -153,8 +153,8 @@ module.exports = {
                 },
                 { answerText: "The capture of their camp", isCorrect: false },
               ],
-            },
-          }),
+            }]
+          ),
           createdAt: new Date(),
           updatedAt: new Date(),
           //END OF BATTLE OBJECT
@@ -200,24 +200,24 @@ module.exports = {
             strength: { number: 7300, guns: 0 },
             casualties: "unknown",
           }),
-          questions: JSON.stringify({
-            question1: {
-              text: "What weather made the battlefield/attacker's situation untenable",
+          questions: JSON.stringify(
+            [{
+              text: "What weather made the siege untenable",
               answerOptions: [
                 { answerText: "Heavy snow", isCorrect: false },
                 { answerText: "Heavy wind", isCorrect: false },
                 { answerText: "Heavy rainfall", isCorrect: true },
               ],
             },
-            question2: {
-              text: "Which nation did the scots fight for?",
+            {
+              text: "Who did the scots fight for?",
               answerOptions: [
                 { answerText: "The Danish", isCorrect: false },
                 { answerText: "The Swedish", isCorrect: true },
                 { answerText: "The Spanish", isCorrect: false },
               ],
-            },
-          }),
+            }]
+          ),
           createdAt: new Date(),
           updatedAt: new Date(),
           //END OF BATTLE OBJECT
@@ -267,24 +267,24 @@ module.exports = {
             strength: { number: 39000, guns: 56 },
             casualties: "5,100 killed",
           }),
-          questions: JSON.stringify({
-            question1: {
-              text: "The sacking of what city rallied support to the swedish cause?",
+          questions: JSON.stringify([
+            {
+              text: "The sacking of what city rallied support to the Swedish cause?",
               answerOptions: [
                 { answerText: "Mecklenburg", isCorrect: false },
                 { answerText: "Morenburg", isCorrect: false },
                 { answerText: "Magdeburg", isCorrect: true },
               ],
             },
-            question2: {
+            {
               text: "Which army was utterly destroyed by the end of the battle?",
               answerOptions: [
                 { answerText: "The Imperial army", isCorrect: false },
                 { answerText: "The Swedish army", isCorrect: true },
-                { answerText: "The dutch army", isCorrect: false },
+                { answerText: "The Dutch army", isCorrect: false },
               ],
-            },
-          }),
+            }]
+          ),
           createdAt: new Date(),
           updatedAt: new Date(),
           //END OF BATTLE OBJECT
@@ -332,24 +332,24 @@ module.exports = {
             strength: { number: 18738, guns: 60 },
             casualties: "6000 killed or wounded",
           }),
-          questions: JSON.stringify({
-            question1: {
-              text: "Did Swedish King Gustavus Adolphus survive the battle?",
+          questions: JSON.stringify(
+            [{
+              text: "Did Swedish king Gustavus Adolphus survive the battle?",
               answerOptions: [
                 { answerText: "No", isCorrect: true },
                 { answerText: "Yes", isCorrect: false },
                 { answerText: "Unknown", isCorrect: false },
               ],
             },
-            question2: {
+            {
               text: "The Swedes and their German allies formed which league after the battle?",
               answerOptions: [
                 { answerText: "Dusseldorf league", isCorrect: false },
                 { answerText: "Christian league", isCorrect: false },
                 { answerText: "Heilbronn league", isCorrect: true },
               ],
-            },
-          }),
+            }]
+          ),
           createdAt: new Date(),
           updatedAt: new Date(),
           //END OF BATTLE OBJECT
@@ -392,14 +392,14 @@ module.exports = {
             strength: { number: 23000, guns: 14 },
             casualties: "4000 killed or wounded",
           }),
-          questions: JSON.stringify({
-            question1: {
-              text: "What stopped Louis prince de Condé from allowing the isolated Spanish infantry to surrender?",
+          questions: JSON.stringify(
+            [{
+              text: "Why did Condé violently reject the surrender of the Spanish infantry?",
               answerOptions: [
                 { answerText: "His advisors", isCorrect: false },
                 {
                   answerText:
-                    "Being fired on by spanish forces when riding to accept their surrender",
+                    "He was fired at by confused spanish forces when riding to accept their surrender",
                   isCorrect: true,
                 },
                 {
@@ -408,7 +408,7 @@ module.exports = {
                 },
               ],
             },
-            question2: {
+            {
               text: "Why did France enter the war on the side of the Protestants?",
               answerOptions: [
                 { answerText: "To gain land from Spain", isCorrect: false },
@@ -418,12 +418,12 @@ module.exports = {
                 },
                 {
                   answerText:
-                    "To limit the influence and power of the Habsburgs",
+                    "To limit the influence and power of the Habsburgs/Holy Roman Empire",
                   isCorrect: true,
                 },
               ],
-            },
-          }),
+            }]
+          ),
           createdAt: new Date(),
           updatedAt: new Date(),
           //END OF BATTLE OBJECT
@@ -462,27 +462,27 @@ module.exports = {
             strength: { number: 20000, guns: 37 },
             casualties: "5000-8000 killed or wounded",
           }),
-          questions: JSON.stringify({
-            question1: {
+          questions: JSON.stringify([
+            {
               text: "What thwarted the two-pronged french attack on the 3rd August?",
               answerOptions: [
                 {
                   answerText: "Rain, nightfall and Bavarian resistance",
                   isCorrect: true,
                 },
-                { answerText: "poor planning", isCorrect: false },
+                { answerText: "Poor planning", isCorrect: false },
                 { answerText: "Logistical issues", isCorrect: false },
               ],
             },
-            question2: {
+            {
               text: "Was Von Mercy's army destroyed whilst retreating on the 9th August?",
               answerOptions: [
                 { answerText: "Yes'", isCorrect: false },
                 { answerText: "No", isCorrect: true },
                 { answerText: "Unsure", isCorrect: false },
               ],
-            },
-          }),
+            }]
+          ),
           createdAt: new Date(),
           updatedAt: new Date(),
           //END OF BATTLE OBJECT
@@ -523,24 +523,24 @@ module.exports = {
             strength: { number: 16000, guns: 60 },
             casualties: "3,000-4,000 killed or wounded",
           }),
-          questions: JSON.stringify({
-            question1: {
-              text: "What type of attack did scotsman Robert Douglas try to do?",
+          questions: JSON.stringify([
+            {
+              text: "What type of attack did Scotsman Robert Douglas try to do?",
               answerOptions: [
                 { answerText: "A frontal charge", isCorrect: false },
                 { answerText: "A diversionary attack", isCorrect: true },
                 { answerText: "An artillery barrage", isCorrect: false },
               ],
             },
-            question2: {
+            {
               text: "What distracted Von Werth's imperial cavalry?",
               answerOptions: [
-                { answerText: "The swedish baggage train", isCorrect: true },
+                { answerText: "The Swedish baggage train", isCorrect: true },
                 { answerText: "An unknown army", isCorrect: false },
                 { answerText: "A comet", isCorrect: false },
               ],
-            },
-          }),
+            }]
+          ),
           createdAt: new Date(),
           updatedAt: new Date(),
           //END OF BATTLE OBJECT
@@ -586,24 +586,24 @@ module.exports = {
             strength: { number: 17000, guns: 27 },
             casualties: "4000 killed or wounded",
           }),
-          questions: JSON.stringify({
-            question1: {
-              text: "What caused Condé to attack before the allied French army had planned?",
+          questions: JSON.stringify([
+            {
+              text: "What caused Condé to attack earlier than the allied French army had planned to?",
               answerOptions: [
                 { answerText: "Courage", isCorrect: false },
                 { answerText: "French fury", isCorrect: false },
                 { answerText: "Impatience", isCorrect: true },
               ],
             },
-            question2: {
-              text: "The death of what commander sealed the fate of the battle",
+            {
+              text: "The death of what Imperial commander sealed the fate of the battle",
               answerOptions: [
                 { answerText: "Louis prince de Condé", isCorrect: false },
                 { answerText: "Von Mercy", isCorrect: true },
                 { answerText: "Vicomte de Turenne", isCorrect: false },
               ],
-            },
-          }),
+            }]
+          ),
           createdAt: new Date(),
           updatedAt: new Date(),
           //END OF BATTLE OBJECT
@@ -649,8 +649,8 @@ module.exports = {
             strength: { number: 22000, guns: 0 },
             casualties: "More than 500 killed or wounded",
           }),
-          questions: JSON.stringify({
-            question1: {
+          questions: JSON.stringify([
+            {
               text: "Why was Sweden keen for a final decisive victory against the Habsburgs?",
               answerOptions: [
                 {
@@ -661,21 +661,21 @@ module.exports = {
                 { answerText: "All of the above", isCorrect: true },
               ],
             },
-            question2: {
+            {
               text: "Imperial commander Peter Melander von Holzappel was killed trying to do what?",
               answerOptions: [
                 { answerText: "Rescue his men", isCorrect: true },
                 {
-                  answerText: "Retreat from the battle field",
+                  answerText: "Retreat from the battlefield",
                   isCorrect: false,
                 },
                 {
-                  answerText: "Switch sides to the french-swedish",
+                  answerText: "Switch to the French-Swedish side",
                   isCorrect: false,
                 },
               ],
-            },
-          }),
+            }]
+          ),
           createdAt: new Date(),
           updatedAt: new Date(),
           //END OF BATTLE OBJECT
@@ -711,8 +711,8 @@ module.exports = {
             strength: { number: 16000, guns: 18 },
             casualties: "1,500 killed or wounded",
           }),
-          questions: JSON.stringify({
-            question1: {
+          questions: JSON.stringify([
+            {
               text: "Why did the Spanish give up their strong hill-top position?",
               answerOptions: [
                 {
@@ -723,12 +723,12 @@ module.exports = {
                 { answerText: "Overconfidence", isCorrect: false },
               ],
             },
-            question2: {
+            {
               text: "Why did the Spanish center eventually surrender?",
               answerOptions: [
                 {
                   answerText:
-                    "They were encircled and charged by French cavalry",
+                    "They were encircled and charged by the French cavalry",
                   isCorrect: true,
                 },
                 {
@@ -737,8 +737,8 @@ module.exports = {
                 },
                 { answerText: "Their own cavalry escaped", isCorrect: false },
               ],
-            },
-          }),
+            }]
+          ),
           createdAt: new Date(),
           updatedAt: new Date(),
           //END OF BATTLE OBJECT
@@ -779,24 +779,24 @@ module.exports = {
             strength: { number: 2000, guns: 0 },
             casualties: "219 killed, 475 wounded",
           }),
-          questions: JSON.stringify({
-            question1: {
-              text: "What was a key motivator for this last Swedish campaign into Bohemia",
+          questions: JSON.stringify([
+            {
+              text: "What was a key motivator for the Swede's last campaign into Bohemia",
               answerOptions: [
                 { answerText: "Honour", isCorrect: false },
                 { answerText: "Land", isCorrect: false },
                 { answerText: "Loot", isCorrect: true },
               ],
             },
-            question2: {
+            {
               text: "Governor Feldmarschall Rudolf von Colloredo was a veteran of which major battle",
               answerOptions: [
                 { answerText: "Freiburg", isCorrect: false },
                 { answerText: "Austerlitz", isCorrect: false },
                 { answerText: "Lutzen", isCorrect: true },
               ],
-            },
-          }),
+            }]
+          ),
           createdAt: new Date(),
           updatedAt: new Date(),
           //END OF BATTLE OBJECT
