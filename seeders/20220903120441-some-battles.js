@@ -28,9 +28,9 @@ module.exports = {
           // START OF BATTLE OBJECT
           name: "White Mountain",
           prelude:
-            "The naming of the fiercely devout Roman catholic Ferdinand II as Holy Roman Emperor and king of Bohemia (czechia), led to the mostly protestant population of Bohemia fearing the loss of religious freedom, rights and autonomy. In response to perceived violations of royal assurances of religious freedom, a group of Bohemian noblemen met with representatives of the emperor at the royal Prague castle. The meeting ended with the Royal representatives being thrown out of a window and seriously injured upon landing on a large pile of manure, sparking the Bohemian revolt. Emperor Ferdinand II set out to conquer Bohemia and quash the rebellion, with an army under Field Marshal Tilly.",
+            "The naming of fiercely devout Roman catholic Ferdinand II as Holy Roman Emperor and king of Bohemia (czechia), led to the mostly protestant Bohemian population fearing the loss of religious freedom, rights and autonomy. In response to perceived violations of royal assurances of religious freedom, a group of Bohemian noblemen met with representatives of the emperor at the royal Prague castle. The meeting ended with the Royal representatives being thrown out of a window and seriously injured upon landing on a large pile of manure, sparking the Bohemian revolt. Emperor Ferdinand II set out to conquer Bohemia and quash the rebellion, with an army under Field Marshal Johan Tserclaes, the count of Tilly.",
           description:
-            "A small imperial force was sent to probe the protestant rear, causing the surprised Bohemians to retreat. Tilly quickly sent in reinforcements, causing the Bohemian rear forces to crumble. The protestant Christian II, prince of Anhalt-Bernburg, tried to support his bohemian allies with a cavalry charge, but it was countered by Tilly's cavalry and repelled. The Bohemian infantry, only now approaching the imperial army, retreated after seeing their cavalry retreating. The protestant army scattered, the battle lasting only one hour.",
+            "A small imperial force was sent to probe the protestant rear, causing the surprised Bohemians to retreat. Tilly quickly sent in reinforcements, causing the forces of the Bohemian rear to crumble. The protestant prince of Anhalt-Bernburg, Christian II, tried to support his bohemian allies with a cavalry charge, but was countered and repelled by Tilly's cavalry. The Bohemian infantry, only now approaching the imperial army, retreated after seeing their own cavalry retreating. The protestant army scattered, the battle lasting only one hour.",
           imageUrl:
             "https://upload.wikimedia.org/wikipedia/commons/0/02/The_Battle_of_White_Mountain_%28by_Peter_Snayers%29.jpg",
           videoUrl:
@@ -96,7 +96,7 @@ module.exports = {
           // START OF BATTLE OBJECT
           name: "Lutter",
           prelude:
-            "Christian IV of Denmark, ruler of the Duchy of Holstein ( a part of the holy roman empire) and member of the protestant Lower Saxon circle, remained neutral during the early stages of the war, following the Bohemian revolt. He and the other members increasingly feared that Holy Roman Emperor Ferdinand intended to retake former catholic lands in North-West Germany, now held by protestants. This fear was confirmed when Catholic league forces led by the Count of Tilly, and an Imperial army under Albrecht von Wallenstein, attacked Magdeburg. Christian was appointed commander of the saxon forces, with Ernst von Mansfeld and Christian of Brunswick as fellow commanders.",
+            "Christian IV of Denmark, ruler of the Duchy of Holstein ( a part of the holy roman empire) and member of the protestant Lower Saxon circle, remained neutral during the early stages of the war, following the Bohemian revolt. He and the other members increasingly feared that Holy Roman Emperor Ferdinand intended to retake former catholic lands in North-West Germany, now held by fellow protestants. This fear was confirmed when Catholic league forces led by the Count of Tilly, and an Imperial army under Albrecht von Wallenstein, attacked Magdeburg. Christian was appointed commander of the saxon forces, with Ernst von Mansfeld and Christian of Brunswick as fellow commanders.",
           description:
             "The Danish-German army led by Christian abandoned their attempt to assist nearby protestant fortresses at Munden, Northeim and Gottingem, following their capture by the count of Tilly and his forces. After harrassment by Tilly's cavalry, Christian decided to make a stand at Lutter am Barenberge. The imperial infantry broke through the Danish line on three occasions but each time was repulsed by a cavalry counter-attack. Eventually, the Danish army was no longer able to maintain its ground and when its entire artillery fell into the hands of the enemy, panic set in and the Danes retreated towards the town of Stade.",
           imageUrl:
@@ -163,9 +163,9 @@ module.exports = {
           // START OF BATTLE OBJECT
           name: "Siege of Stralsund",
           prelude:
-            "The defeat of Ernst von Mansfeld and Christian IV of Denmark by Albrecht von Wallenstein and Tilly, respectively, led to Christian's expulsion from North Germany. This left the Duchy of Pomerania, which included Stralsund, vulnerable. It declared neutrality and was occupied by Imperial forces led by Albrecht von Wallenstein. Stralsund refused to submit and was besieged by Wallenstein's forces. It sought military aid from Denmark, and then from Sweden",
+            "The defeat of Ernst von Mansfeld and Christian IV of Denmark by Albrecht von Wallenstein and Tilly, respectively, led to Christian's expulsion from North Germany. This left the Duchy of Pomerania, which included the city of Stralsund, vulnerable. Stralsund declared neutrality but was to be occupied by Imperial forces led by Albrecht von Wallenstein. Stralsund refused to submit and was besieged by Wallenstein's forces. It sought military aid from Denmark, and then from Sweden",
           description:
-            "Wallenstein organised regular attacks on the city's fortifications, which were defended by Sottish mercenaries under the employment of the Danish. Wallenstein's forces successfully captured the outer regions of the fortifications, then proceeded to bombard the city with artillery. The city later received reinforcements via swedish boats filled with Danish-scottish troops who immediately joined the defence of the city. Heavy rainfall during late july turned the battlefield into a marsh, making the attacker's situation untenable. Wallenstein ended the siege on 4th August",
+            "Wallenstein organised regular attacks on the city's fortifications, which were defended by Sottish mercenaries under the employment of the Danish. Wallenstein's forces successfully captured the outer regions of the fortifications, then proceeded to bombard the city with artillery. The city later received reinforcements via swedish boats filled with Danish-scottish troops who immediately joined the defence of the city. Heavy rainfall during late July turned the battlefield into a marsh, making the attacker's situation untenable. Wallenstein ended the siege on 4th August",
           imageUrl:
             "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a1/Belagerung_Stralsunds_durch_Wallenstein_2.jpg/1000px-Belagerung_Stralsunds_durch_Wallenstein_2.jpg",
           videoUrl:
@@ -210,10 +210,10 @@ module.exports = {
               ],
             },
             {
-              text: "Who did the scots fight for?",
+              text: "Who did the Scots fight for?",
               answerOptions: [
-                { answerText: "The Danish", isCorrect: false },
-                { answerText: "The Swedish", isCorrect: true },
+                { answerText: "The Danish", isCorrect: true },
+                { answerText: "The Swedish", isCorrect: false },
                 { answerText: "The Spanish", isCorrect: false },
               ],
             }]
@@ -226,9 +226,9 @@ module.exports = {
           // START OF BATTLE OBJECT
           name: "Breitenfeld",
           prelude:
-            "Protestant Sweden's entrance into the war, led by king Gustavus Adolphus, in 1630 was considered a minor annoyance to the Catholic league and its allies. German protestant princes also showed little interest in joining the Swedish cause. The sacking and massacre of the sweden-allied city of Magdeburg by Imperial troops proved to be a valuable recruiting tool for the Swedes, attracting French, Prussian and German princly support for the swedish cause. In order for the Swedes to attack imperial troops in the south, they needed to pass through saxony. In order for Imperial forces to attack the swedes, they too had to pass through saxony.",
+            "Protestant Sweden's entrance into the war in 1630, led by king Gustavus Adolphus, was considered a minor annoyance to the Catholic league and its allies. German protestant princes also showed little interest in joining the Swedish cause. The sacking and massacre of the Swedish-allied city of Magdeburg by Imperial troops proved to be a valuable recruiting tool for the Swedes, attracting French, Prussian and German princly support for the swedish cause. In order for the Swedes to attack imperial troops in the south, they needed to pass through saxony. In order for Imperial forces to attack the swedes, they too had to pass through saxony.",
           description:
-            "The armies drew up on a plain near the village of Breitenfeld, a few miles outside the walls of Leipzig. At first, von Pappenheim’s reckless gamble seemed about to pay off: at the first charge of his cavalry, the raw Saxon levies broke and fled the field. However, Gustavus nimbly turned his line to prevent Imperial forces attacking his rear. A daring Swedish cavalry raid captured all of the Imperial artillery, which was turned against its owners. Artillery pounded the Imperial forces until night fell. Imperial armies were utterly destroyed, losing two-thirds of their men and all their artillery and supplies. In one stroke, Gustavus had made himself master of Germany.",
+            "The armies drew up on a plain near the village of Breitenfeld, a few miles outside the walls of Leipzig. At first, von Pappenheim's reckless gamble seemed about to pay off: at the first charge of his cavalry, the  Saxon levies, which had not seen battle before, broke and fled the field. However, Gustavus nimbly turned his line to prevent Imperial forces attacking his rear. A daring Swedish cavalry raid captured all of the Imperial artillery, which was turned against its owners. Artillery pounded the Imperial forces until night fell. The imperial armies were utterly destroyed, losing two-thirds of their men and all their artillery and supplies. In one stroke, Gustavus had made himself master of Germany.",
           imageUrl:
             "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c6/Gustave_Adolphe_at_Breitenfeld-Johann_Walter-f3706497.jpg/1280px-Gustave_Adolphe_at_Breitenfeld-Johann_Walter-f3706497.jpg",
           videoUrl:
@@ -279,8 +279,8 @@ module.exports = {
             {
               text: "Which army was utterly destroyed by the end of the battle?",
               answerOptions: [
-                { answerText: "The Imperial army", isCorrect: false },
-                { answerText: "The Swedish army", isCorrect: true },
+                { answerText: "The Imperial army", isCorrect: true },
+                { answerText: "The Swedish army", isCorrect: false },
                 { answerText: "The Dutch army", isCorrect: false },
               ],
             }]
@@ -293,9 +293,9 @@ module.exports = {
           // START OF BATTLE OBJECT
           name: "Lutzen",
           prelude:
-            "Gustavus Adolphus's victories at Breitenfeld in 1631, and Rain in 1632, drew him deep into Southern Germany where an attack on the imperial camp outside the city of Furth was bloodily repulsed by Albrecht von Wallenstein's imperial army. The swedes later made contact with Wallenstein's troops at Halle, then at a stream 5-6 kilometres south of the city of Lutzen. Wallenstein requested reinforcements while the swedes camped 2 kilometres outside the town. Imperial troops worked through the night building defensive positions.",
+            "Gustavus Adolphus's victories at Breitenfeld in 1631, and Rain in 1632, drew him deep into Southern Germany where a Swedish attack on the imperial camp outside the city of Furth was bloodily repulsed by Albrecht von Wallenstein's imperial army. The Swedes later made contact with Wallenstein's troops at Halle, then at a stream 5-6 kilometres south of the city of Lutzen. Wallenstein requested reinforcements while the Swedes camped 2 kilometres outside the town. Imperial troops worked through the night building defensive positions.",
           description:
-            "The first part of the battle featured a series of frontal attacks by the Swedes, which nearly succeeded before it was repulsed by a cavalry charge led by Pappenheim. While trying to reform his shattered infantry, Gustavus was killed in a skirmish with Imperial troop. His subordinates rallied their men and, supported by close range artillery fire, overran the Imperial centre just before nightfall. Wallenstein withdrew in good order but had to abandon his wounded, many of his guns and most of his supply train. Despite the loss of their king, the Swedes continued the war under the direction of Axel Oxenstierna and, together with their German allies, formed the Heilbronn League in April 1633.",
+            "The first part of the battle featured a series of frontal attacks by the Swedes, which nearly succeeded before it was repulsed by a cavalry charge led by Pappenheim. While trying to reform his shattered infantry, Gustavus was killed in a skirmish with Imperial troops. His subordinates rallied their men and, supported by close range artillery fire, overran the Imperial centre just before nightfall. Wallenstein withdrew in good order but had to abandon his wounded, many of his guns and most of his supply train. Despite the loss of their king, the Swedes continued the war under the direction of Axel Oxenstierna. The Swedes and their German allies would go on to form the Heilbronn League in April 1633.",
           imageUrl:
             "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a0/Death_of_King_Gustav_II_Adolf_of_Sweden_at_the_Battle_of_L%C3%BCtzen_%28Carl_Wahlbom%29_-_Nationalmuseum_-_18031.tif/lossy-page1-1280px-Death_of_King_Gustav_II_Adolf_of_Sweden_at_the_Battle_of_L%C3%BCtzen_%28Carl_Wahlbom%29_-_Nationalmuseum_-_18031.tif.jpg",
           videoUrl:
@@ -358,9 +358,9 @@ module.exports = {
           // START OF BATTLE OBJECT
           name: "Rocroi",
           prelude:
-            "A string of protestant defeats led France to intervene on the side of the protestants and declare war on the Habsburgs (Holy Roman Empire), and Spanish empire on 19th May 1635, to limit Habsburg power. This was despite France being a Catholic power which suppressed its own Protestant rebellions. An initial invasion of the Spanish netherlands ended in failure, with the French retreating to their borders. The peace of Prague in 1935 also saw most of the rebellious German protestant states exit the war. The French defeat at the Battle of Honnecourt in 1642 opened the way to paris, Spanish troops under Francisco de melo laid siege to the fortified town of Rocroi. 21 year old Louis de Bourbon, Prince of Condé, was appointed to stop him",
+            "A string of recent protestant defeats led France to intervene on the side of the protestants and declare war on the Habsburgs (Holy Roman Empire), and Spanish empire on 19th May 1635, to limit Habsburg power. This was despite France being a Catholic power which suppressed its own Protestant rebellions. An initial invasion of the Spanish netherlands ended in failure, with the French retreating to their borders. The peace of Prague in 1935 also saw most of the rebellious German protestant states exit the war. A further French defeat at the Battle of Honnecourt in 1642 opened the way to Paris, Spanish troops under Francisco de melo laid siege to the fortified French of Rocroi. 21 year old Louis de Bourbon, Prince of Condé, was appointed to stop him",
           description:
-            "The battle began with a French cavalry attack which pushed back and scattered the opposing Spanish cavalry. An unauthorised french cavalry atack on the spanish was repulsed, with the spanish mounting a counter-attack which was later stopped by the french. Louis Condé's cavalry encircled the spanish and crashed through their rear, scattering the Spanish cavalry and artillery crews. The trapped and encircled spanish infantry held their ground and were pummeled with french artillery and captured spanish guns. Impressed with the bravery of the spanish troops, Condé offered the option of surrender, which the spanish accepted. However, upon riding toward the Spanish troops to accept their surrender, confused spanish troops opened fire on the prince, who was able to retreat. French forces responded with a devastating attack in whch the Spanish army was virtually destroyed.",
+            "The battle began with a French cavalry attack which pushed back and scattered the opposing Spanish cavalry. An unauthorised French cavalry atack on the Spanish was repulsed, with the Spanish mounting a counter-attack which was later stopped by the French. Condé's cavalry managed to encircle the Spanish and crashed through their rear, scattering the Spanish cavalry and artillery crews. The trapped and encircled Spanish infantry held their ground and were pummeled by French artillery and captured Spanish guns. Impressed with the bravery of the Spanish troops, Condé offered the option of surrender, which the Spanish accepted. However, upon riding toward the Spanish troops to accept their surrender, confused Spanish troops opened fire on the prince, who was able to retreat. French forces responded with a devastating attack in whch the Spanish army was virtually destroyed.",
           imageUrl:
             "https://upload.wikimedia.org/wikipedia/commons/9/9f/Rocroi.jpg",
           videoUrl:
@@ -396,7 +396,7 @@ module.exports = {
             [{
               text: "Why did Condé violently reject the surrender of the Spanish infantry?",
               answerOptions: [
-                { answerText: "His advisors", isCorrect: false },
+                { answerText: "He was convinced to by his advisors", isCorrect: false },
                 {
                   answerText:
                     "He was fired at by confused spanish forces when riding to accept their surrender",
@@ -431,10 +431,10 @@ module.exports = {
         {
           // START OF BATTLE OBJECT
           prelude:
-            "After Breitenfeld, the french suffered a considerable defeat in 1643, at the battle of Tuttlingen against Bavarian, imperial and Spanish troops led by Franz von mercy and Johanne Von Werth.The French army was ambushed and destroyed, with casualties of 11,000 men killed or wounded. The french were forced to recall Field Marshal Viscomte De Turenne to handle the war in Germany. The Duke of Bavaria decided to capitalise on the weakened french situation by sending Von Mercy and his troops towards Turenne, near Freiburg. Von Mercy's larger and organised force forced the French Garrison to hand over the city. Louis de Condé was dispatched with an army to protect and/or retake the city",
+            "After Breitenfeld, the French suffered a considerable defeat in 1643, at the battle of Tuttlingen against Bavarian, imperial and Spanish troops led by Franz von mercy and Johanne Von Werth.The French army was ambushed and destroyed, with casualties of 11,000 men killed or wounded. The French were forced to recall Field Marshal Viscomte (viscount) De Turenne to handle the war in Germany. The Duke of Bavaria decided to capitalise on the weakened French situation by sending Von Mercy and his troops towards Turenne, near Freiburg. Von Mercy's larger and organised force forced the French Garrison to hand over the city. Louis de Condé was dispatched with an army to protect and/or retake the city",
           name: "Freiburg",
           description:
-            "The 3rd of August saw an attempted two-pronged French attack, with Turenne attempting a flanking attack an Louis Condé attempting a frontal atack. The french suffered heavy casualties and both attacks were halted due to rain, nightfall and Bavarian resistance. The 5th of August saw the french lose approximately half their army due to repeated waves of uncoordinated attacks, capitalised on by Von Mercy's forces. The 9th of August saw the french try to cut off Bavarian supplies, however they were outmaneuvered by Von mercy who had already secretly relocated his main army to secure supplies and ammunition. The Bavarians were able to perform a successful fighting retreat to Villingen, without losing many casualties.",
+            "The 3rd of August saw an attempted two-pronged French attack, with Turenne attempting a flanking attack an Louis Condé attempting a frontal atack. The French suffered heavy casualties and both attacks were halted due to rain, nightfall and Bavarian resistance. The 5th of August saw the French lose approximately half their army due to repeated waves of uncoordinated attacks, capitalised on by Von Mercy's forces. The 9th of August saw the French try to cut off Bavarian supplies, however they were outmaneuvered by Von mercy who had already secretly relocated his main army to secure supplies and ammunition. The Bavarians were able to perform a successful fighting retreat to Villingen, without losing many casualties.",
           imageUrl:
             "https://upload.wikimedia.org/wikipedia/commons/thumb/5/51/H._Grobet_-_Cond%C3%A9_%C3%A0_la_bataille_de_Fribourg-en-Brisgau_%281644%29.jpg/1024px-H._Grobet_-_Cond%C3%A9_%C3%A0_la_bataille_de_Fribourg-en-Brisgau_%281644%29.jpg",
           videoUrl:
@@ -477,7 +477,7 @@ module.exports = {
             {
               text: "Was Von Mercy's army destroyed whilst retreating on the 9th August?",
               answerOptions: [
-                { answerText: "Yes'", isCorrect: false },
+                { answerText: "Yes", isCorrect: false },
                 { answerText: "No", isCorrect: true },
                 { answerText: "Unsure", isCorrect: false },
               ],
@@ -493,7 +493,7 @@ module.exports = {
           prelude:
             "With the 1635 Treaty of Prague, most of Sweden's protestant German allies made peace. The war lost much of its religious aspect, and turned into a contest between the Holy Roman Empire, and the Swedish Empire supported by France and others. The Danes also re-enetered the war as an imperial ally. THe swedes, led by Lennart Torstensson began plans for an offensive wich would force Ferdinand III, Holy Roman Emperor, to agree to peace terms. While France attacked Bavaria, Torstensson would move into Bohemia then strike at the Imperial capital at Vienna.",
           description:
-            "The morning of the battle saw a swedish army column under scotsman Robert Douglas attempt a diversionary attack against the Imperial army's right. After leaving to assess this swedish move, Imperial commander Von Hatzfeldt found that his subordinate Von Gotzen, had misinterpreted his orders while he had gone, moving his entire force to a hill and getting stuck in the woods, allowing the swedes time to place artillery guns and infantry near them. After a furious argument, von Gotzen launched numerous attacks at the swedes, which were repulsed with heavy losses, until he himself was killed and his troops retreated. Hatzfeld held his position until nightfall, prompting Torstensson to move his artillery closer and fire at close range at the helpless Imperial infantry. Von Werth's Imperial cavalry charged and scattered the Swedish right, before stopping to loot the swedish baggage train, where they also captured Torstensson's wife. The swedish cavalry regrouped and counter-attacked the distracted Imperials, inflicting heavy casualties. The isolated Imperial infantry surrendered, many prisoners were taken, including Imperial commander Von Hatzfeldt.",
+            "The morning of the battle saw a Swedish army column under Scotsman Robert Douglas attempt a diversionary attack against the Imperial army's right. After leaving to assess this Swedish move, Imperial commander Von Hatzfeldt found that his subordinate Von Gotzen, had misinterpreted his orders while he had gone, moving his entire force to a hill and getting stuck in the woods, giving the Swedes time to place artillery guns and infantry near them. After a furious argument, von Gotzen launched numerous attacks at the Swedes, which were repulsed with heavy losses, until he himself was killed and his troops retreated. Hatzfeld held his position until nightfall, prompting Torstensson to move his artillery closer and fire at close range at the helpless Imperial infantry. Von Werth's Imperial cavalry charged and scattered the Swedish right, before stopping to loot the Swedish baggage train, where they also captured Torstensson's wife. The Swedish cavalry regrouped and counter-attacked the distracted Imperials, inflicting heavy casualties. The isolated Imperial infantry surrendered, many prisoners were taken, including Imperial commander Von Hatzfeldt.",
           imageUrl: `${jankauPic}`,
           videoUrl:
             "https://www.youtube.com/embed/tPfrVjZ-X60",
@@ -760,7 +760,7 @@ module.exports = {
           latitude: 50.086389,
           longitude: 14.412222,
           armyOne: JSON.stringify({
-            beligerents: [["Swedish Empire"]],
+            beligerents: [["Swedish Empire",swedish]],
             commanders: [
               ["Hans Christoff von Königsmarck", swedish],
               ["Prince Carl Gustaf", swedish],
@@ -772,7 +772,7 @@ module.exports = {
           armyTwo: JSON.stringify({
             beligerents: [["Bohemia", bohemia]],
             commanders: [
-              ["Count Rudolph Colloredo-Wallsee", bohemia],
+              ["Count Rudolph Colloredo", bohemia],
               ["Jiří Plachý", bohemia],
               ["Hans Georg Kauffer", bohemia],
             ],
