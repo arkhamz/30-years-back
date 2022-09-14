@@ -3,8 +3,6 @@ const express = require("express");
 const {Router} = express;
 const router = new Router();
 
-
-
 //get battles based on user progress - i.e. get unlocked battle
 router.get("/progress/:userId/battles", async function(req,res,next){
     //get user's ID from request params
@@ -33,9 +31,6 @@ router.get("/progress/:userId/battles", async function(req,res,next){
         });
         //get max ID
         const progress = Math.max(...battlesIdArr);
-
-
-
 
         //send battle array and progress (highest battle ID unlocked) response
         return res.status(200).send({battlesArr, progress});
@@ -74,6 +69,7 @@ router.post("/progress/new", async function(req,res,next){
         if(!newProgress){
             return res.status(400).send("Invalid data provided")
         }
+        // increment frontend progress whenever this api is successfully called?
 
         return res.status(200).send("added user progress")
 
