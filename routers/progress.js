@@ -1,10 +1,11 @@
 const {battle, userProgress,user} = require("../models");
 const express = require("express");
+const fireMiddleware = require("../middleware/fireMiddleware");
 const {Router} = express;
 const router = new Router();
 
 //get battles based on user progress - i.e. get unlocked battle
-router.get("/progress/:userId/battles", async function(req,res,next){
+router.get("/progress/:userId/battles", fireMiddleware, async function(req,res,next){
     //get user's ID from request params
     const {userId} = req.params;
     const idNum = Number(userId);

@@ -1,5 +1,6 @@
 const {battle:Battle} = require("../models");
 const express = require("express");
+const fireMiddleware = require("../middleware/fireMiddleware");
 const {Router} = express;
 const router = new Router();
 
