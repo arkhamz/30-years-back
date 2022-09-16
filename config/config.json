@@ -1,6 +1,9 @@
+
+
+
 {
   "development": {
-    "url": "postgres://bopxuuzu:TnauKRnPSMVWnGCFBnvZ34qXVqcJe3Tf@tyke.db.elephantsql.com/bopxuuzu",
+    "url": "",
     "dialect": "postgres"
   },
   "test": {
