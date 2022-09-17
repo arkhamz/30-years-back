@@ -44,7 +44,7 @@ router.get("/progress/:userId/battles", fireMiddleware, async function(req,res,n
 })
 
 // add a user progress record - i.e. add/ unlocked battle
-router.post("/progress/new", async function(req,res,next){
+router.post("/progress/new",fireMiddleware, async function(req,res,next){
 
     //get userId and battleId from req.body
     const {uid, battleId} = req.body;
