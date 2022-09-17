@@ -1,11 +1,12 @@
 const {commander:Commander} = require("../models");
 const express = require("express");
+const fireMiddleware = require("../middleware/fireMiddleware");
 const {Router} = express;
 const router = new Router();
 
 
 //route for getting all commanders
-router.get("/commanders", async function(req,res,next){
+router.get("/commanders", fireMiddleware, async function(req,res,next){
     try {
 
         const commanders = await Commander.findAll();
@@ -23,7 +24,7 @@ router.get("/commanders", async function(req,res,next){
 });
 
 //ENDPOINT FOR GETTING SPECIFIC COMMANDER
-router.get("/commanders/:id", async function(req,res,next){
+router.get("/commanders/:id", fireMiddleware, async function(req,res,next){
 
     const {id} = req.params;
     const idNum = Number(id);

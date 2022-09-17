@@ -22,7 +22,7 @@ router.get("/battles", async function(req,res,next){
 });
 
 
-router.get("/battles/:id", async function(req,res,next){
+router.get("/battles/:id",fireMiddleware, async function(req,res,next){
 
     const {id} = req.params;
     const idNum = Number(id);
