@@ -7,7 +7,7 @@ const PORT = process.env.PORT || 4000;
 
 // fb admin stuff
 const admin = require("firebase-admin");
-const serviceAccount = fs.readFileSync("./service-key.json",null);
+const serviceAccount = filer.readFileSync("./service-key.json",null);
 
 const adminApp = admin.initializeApp({
     credential: admin.credential.cert(serviceAccount)
