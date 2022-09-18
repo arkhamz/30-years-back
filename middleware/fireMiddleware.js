@@ -7,8 +7,16 @@ const serviceAccount = require("../service-key.json");
 console.log(serviceAccount);
 
 
+// const app = fbAdmin.initializeApp({
+//     credential: fbAdmin.credential.cert(serviceAccount)
+// });
+
 const app = fbAdmin.initializeApp({
-    credential: fbAdmin.credential.cert(serviceAccount)
+    credential: fbAdmin.credential.cert({
+        projectId: process.env.PROJECT_ID,
+        clientEmail: process.env.CLIENT_EMAIL,
+        privateKey: process.env.PRIVATE_KEY.replace(/\\n/g, '\n')
+    })
 });
 
 
