@@ -20,17 +20,6 @@ app.use(function(req, res, next) {
   next();
 });
 
-
-// fb admin stuff
-const admin = require("firebase-admin");
-const serviceAccount = require("./service-key.json");
-
-const adminApp = admin.initializeApp({
-    credential: admin.credential.cert(serviceAccount)
-});
-
-
-
 //import routers
 const battleRouter = require("./routers/battles");
 const commanderRouter = require("./routers/commanders");
@@ -47,5 +36,3 @@ app.use(userRouter);
 app.listen(PORT, function () {
   console.log(`Server listening on port ${PORT}`);
 });
-
-module.exports = adminApp;
