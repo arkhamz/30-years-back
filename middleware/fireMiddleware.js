@@ -3,8 +3,8 @@ require("dotenv").config({ path: path.resolve(__dirname, '..', '.env') });
 
 const fbAdmin = require("firebase-admin");
 
-const serviceAccount = require("../service-key.json");
-console.log(serviceAccount);
+// const serviceAccount = require("../service-key.json");
+// console.log(serviceAccount);
 
 
 // const app = fbAdmin.initializeApp({
