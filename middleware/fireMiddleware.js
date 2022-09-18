@@ -1,36 +1,24 @@
 // const path = require('path');
 // require("dotenv").config({ path: path.resolve(__dirname, '..', '.env') });
 
-// const fbAdmin = require("firebase-admin");
+const fbAdmin = require("firebase-admin");
 
-// const serviceAccount = require("./service-key.json");
-// console.log(serviceAccount);
-// mdsdsfdsfdf
-//sdsdsds
+const serviceAccount = require("../service-key.json");
 
-
-// const app = fbAdmin.initializeApp({
-//     credential: fbAdmin.credential.cert(serviceAccount)
-// });
-
-// const app = fbAdmin.initializeApp({
-//     credential: fbAdmin.credential.cert({
-//         projectId: process.env.PROJECT_ID,
-//         clientEmail: process.env.CLIENT_EMAIL,
-//         privateKey: process.env.PRIVATE_KEY.replace(/\\n/g, '\n')
-//     })
-// });
-
-const app = require("../index")
+const app = fbAdmin.initializeApp({
+    credential: fbAdmin.credential.cert(serviceAccount)
+});
 
 
 async function fireMiddleware(req,res,next){
+    console.log("start auth middleware")
     const auth = req.headers.authorization && req.headers.authorization.split(" ");
     if(!auth || !(auth[0] === "Bearer") || !auth[1]){
         return res.status(401).send("Invalid or missing authorisation token");
     }
 
     const fireToken = auth[1];
+    console.log("token", fireToken);
 
     try {
         // check the token
