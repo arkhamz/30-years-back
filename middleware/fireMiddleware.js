@@ -2,7 +2,8 @@
 
 const fbAdmin = require("firebase-admin");
 
-const serviceAccount = require(process.env.GOOGLE_APPLICATION_CREDENTIALS);
+const serviceAccount = require(`${process.env.GOOGLE_APPLICATION_CREDENTIALS}`);
+
 
 const app = fbAdmin.initializeApp({
     credential: fbAdmin.credential.cert(serviceAccount)
