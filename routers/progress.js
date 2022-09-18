@@ -4,46 +4,6 @@ const fireMiddleware = require("../middleware/fireMiddleware");
 const {Router} = express;
 const router = new Router();
 
-// //get battles based on user progress - i.e. get unlocked battle
-// router.get("/progress/:userId/battles", fireMiddleware, async function(req,res,next){
-//     //get user's ID from request params
-//     const {userId} = req.params;
-//     const idNum = Number(userId);
-//     try {
-
-//         const battleRecords = await userProgress.findAll({
-//             where: {
-//                 userId: idNum,
-//                 unlocked: true
-//             },
-//             include: [{model: battle}]
-//         });
-//         if(battleRecords.length < 1){
-//             return res.status(404).send("No battle records found");
-//         }
-
-//         const battlesArr = battleRecords.map(function(item,index,arr){
-//             return item.battle;
-//         });
-
-//         // map battleArr to get array of battle IDs
-//         const battlesIdArr = battlesArr.map(function(item,index,arr){
-//             return item.id;
-//         });
-//         //get max ID
-//         const progress = Math.max(...battlesIdArr);
-
-//         //send battle array and progress (highest battle ID unlocked) response
-//         return res.status(200).send({battlesArr, progress});
-        
-//     } catch (e) {
-//         console.log(e);
-//         console.log(e.message);
-//         next(e);
-//     }
-// })
-
-
 //get battles based on user progress - get user from uid i.e. get unlocked battle
 router.get("/progress/:uid/battles", fireMiddleware, async function(req,res,next){
     //get user's ID from request params
@@ -56,8 +16,6 @@ router.get("/progress/:uid/battles", fireMiddleware, async function(req,res,next
                 uid: uid
             }
         });
-
-        console.log(singleUser);
 
         if(!singleUser){   
             return res.status(404).send("User with progress does not exist")
