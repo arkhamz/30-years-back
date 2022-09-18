@@ -6,6 +6,8 @@ const PORT = process.env.PORT || 4000;
 
 //import cors
 const corsMiddleWare = require("cors");
+app.use(corsMiddleWare());
+
 
 //import routers
 const battleRouter = require("./routers/battles");
@@ -13,7 +15,6 @@ const commanderRouter = require("./routers/commanders");
 const progressRouter = require("./routers/progress");
 const userRouter = require("./routers/user");
 //register middleware body parsers/routers
-app.use(corsMiddleWare());
 app.use(express.json());
 app.use(express.urlencoded({ extended: false }));
 app.use(battleRouter);
