@@ -1,4 +1,6 @@
 const {userProgress,battle,user} = require("./models");
+console.log(process.env)
+
 
 async function getStuff(){
 
@@ -23,6 +25,8 @@ async function getStuff(){
         
     }
 }
+
+// const path = require(process.env.GOOGLE_APPLICATION_CREDENTIALS);
 
 // getStuff();
 

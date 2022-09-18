@@ -1,4 +1,5 @@
-require('dotenv').config();
+const path = require('path');
+require("dotenv").config({ path: path.resolve(__dirname, '..', '.env') });
 
 const fbAdmin = require("firebase-admin");
 
@@ -8,7 +9,6 @@ const serviceAccount = require(process.env.GOOGLE_APPLICATION_CREDENTIALS);
 const app = fbAdmin.initializeApp({
     credential: fbAdmin.credential.cert(serviceAccount)
 });
-
 
 
 async function fireMiddleware(req,res,next){
