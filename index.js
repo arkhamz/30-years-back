@@ -13,9 +13,9 @@ const commanderRouter = require("./routers/commanders");
 const progressRouter = require("./routers/progress");
 const userRouter = require("./routers/user");
 //register middleware body parsers/routers
+app.use(corsMiddleWare());
 app.use(express.json());
 app.use(express.urlencoded({ extended: false }));
-app.use(corsMiddleWare());
 app.use(battleRouter);
 app.use(commanderRouter);
 app.use(progressRouter);
