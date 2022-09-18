@@ -1,5 +1,6 @@
 const {userProgress,battle,user} = require("./models");
 console.log(process.env)
+console.log("two");
 
 
 async function getStuff(){
