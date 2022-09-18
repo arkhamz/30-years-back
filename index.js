@@ -4,14 +4,6 @@ const express = require("express");
 const app = express();
 const PORT = process.env.PORT || 4000;
 
-// fb admin stuff
-const admin = require("firebase-admin");
-const serviceAccount = require("./service-key.json");
-
-const adminApp = admin.initializeApp({
-    credential: admin.credential.cert(serviceAccount)
-});
-
 //import cors
 const corsMiddleWare = require("cors");
 app.use(corsMiddleWare({
@@ -21,6 +13,16 @@ app.use(corsMiddleWare({
   'methods': 'GET,HEAD,PUT,PATCH,POST,DELETE',
   'preflightContinue': false
 }));
+
+
+// fb admin stuff
+const admin = require("firebase-admin");
+const serviceAccount = require("./service-key.json");
+
+const adminApp = admin.initializeApp({
+    credential: admin.credential.cert(serviceAccount)
+});
+
 
 
 //import routers
