@@ -1,6 +1,5 @@
 const {userProgress,battle,user} = require("./models");
 
-
 async function getStuff(){
 
     try {
@@ -25,4 +24,5 @@ async function getStuff(){
     }
 }
 
-getStuff();
+// getStuff();
+
