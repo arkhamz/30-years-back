@@ -1,4 +1,4 @@
-module.exports = {
+ {
   "type": "service_account",
   "project_id": "historymate-b9233",
   "private_key_id": "44696cbfc172ca59f198e3a0d6d2532ab8e42bd5",
