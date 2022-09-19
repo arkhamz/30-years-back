@@ -1,6 +1,6 @@
 const {userProgress,battle,user} = require("./models");
-console.log(process.env)
-console.log("two");
+const serviceAccount = require("./service-key.json")
+console.log(serviceAccount);
 
 
 async function getStuff(){
