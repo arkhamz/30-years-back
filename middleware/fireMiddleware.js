@@ -9,8 +9,7 @@ const app = fbAdmin.initializeApp({
     credential: fbAdmin.credential.cert(serviceAccount)
 });
 //ssdsd
-//sdsds
-///dsdsd
+
 
 // const app = fbAdmin.initializeApp();
 
