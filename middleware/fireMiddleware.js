@@ -6,14 +6,12 @@ const fbAdmin = require("firebase-admin");
 const serviceAccount = require(process.env.GOOGLE_APPLICATION_CREDENTIALS);
 
 const app = fbAdmin.initializeApp({
-    credential: fbAdmin.credential.cert({
-        projectId: `${process.env.PROJECT_ID}`,
-        clientEmail: `${process.env.CLIENT_EMAIL}`,
-        privateKey: `${process.env.PRIVATE_KEY?.replace(/\\n/g, '\n')}`
-    })
+    credential: fbAdmin.credential.cert(serviceAccount)
 });
-// change
-// changedsds
+//ssdsd
+//sdsds
+///dsdsd
+
 
 async function fireMiddleware(req,res,next){
     console.log("start auth middleware")
@@ -33,6 +31,7 @@ async function fireMiddleware(req,res,next){
         } else{
             return res.status(400).send("Invalid token");
         }
+        //dadsdsdds
         
         
     } catch (e) {
