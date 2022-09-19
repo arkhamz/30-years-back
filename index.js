@@ -8,7 +8,7 @@ const PORT = process.env.PORT || 4000;
 const corsMiddleWare = require("cors");
 app.use(corsMiddleWare({
   allowedHeaders: ['Content-Type', "Authorization",], // headers that React is sending to the API
-  exposedHeaders: ['Content-Length', 'X-Requested-With', ' Authorization','Content-Type'], // headers that you are sending back to React
+  exposedHeaders: ['Content-Type'], // headers that you are sending back to React
   origin: '*',
   methods: ["GET","HEAD","PUT","PATCH","POST","DELETE"],
   preflightContinue: false
