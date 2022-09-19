@@ -9,7 +9,7 @@ const app = fbAdmin.initializeApp({
     credential: fbAdmin.credential.cert({
         projectId: `${process.env.PROJECT_ID}`,
         clientEmail: `${process.env.CLIENT_EMAIL}`,
-        privateKey: `${process.env.PRIVATE_KEY}`
+        privateKey: `${process.env.PRIVATE_KEY?.replace(/\\n/g, '\n')}`
     })
 });
 // change
