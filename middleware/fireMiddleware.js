@@ -2,7 +2,6 @@
 // require("dotenv").config({ path: path.resolve(__dirname, '..', '.env') });
 
 const fbAdmin = require("firebase-admin");
-const cors = require("cors");
 
 const serviceAccount = process.env.GOOGLE_APPLICATION_CREDENTIALS;
 
@@ -12,6 +11,8 @@ const app = fbAdmin.initializeApp({
 //ssdsd
 //sdsds
 ///dsdsd
+
+// const app = fbAdmin.initializeApp();
 
 
 
