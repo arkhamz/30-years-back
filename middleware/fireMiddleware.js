@@ -2,8 +2,9 @@
 // require("dotenv").config({ path: path.resolve(__dirname, '..', '.env') });
 
 const fbAdmin = require("firebase-admin");
+const cors = require("cors");
 
-const serviceAccount = require(process.env.GOOGLE_APPLICATION_CREDENTIALS);
+const serviceAccount = process.env.GOOGLE_APPLICATION_CREDENTIALS;
 
 const app = fbAdmin.initializeApp({
     credential: fbAdmin.credential.cert(serviceAccount)
@@ -11,6 +12,7 @@ const app = fbAdmin.initializeApp({
 //ssdsd
 //sdsds
 ///dsdsd
+
 
 
 async function fireMiddleware(req,res,next){
