@@ -12,7 +12,8 @@ const app = fbAdmin.initializeApp({
         privateKey: `${process.env.PRIVATE_KEY}`
     })
 });
-
+// change
+// changedsds
 
 async function fireMiddleware(req,res,next){
     console.log("start auth middleware")
