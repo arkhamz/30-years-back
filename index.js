@@ -1,6 +1,5 @@
 require('dotenv').config();
 
-const pg = require("pg")
 const express = require("express");
 const app = express();
 const PORT = process.env.PORT || 4000;
@@ -37,5 +36,3 @@ app.use(userRouter);
 app.listen(PORT, function () {
   console.log(`Server listening on port ${PORT}`);
 });
-
-module.exports = app;
